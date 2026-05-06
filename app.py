@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
-
-app = Flask(__name__,template_folder='templates')
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app)
 
 names = ["ronaldo","dimaria","xabi alonso","neymar","sergio ramos","rooney","ibrahimovic",
     "messi","mbappe","haaland","modric","benzema","salah","kevin de bruyne","lewandowski",
@@ -56,12 +57,13 @@ def main_page():
 def game_page():
     return render_template('index.html')
 
-
 @app.route('/get_hint', methods=['POST'])
 def get_hint():
     data = request.json
     index = int(data['index'])
+
     hint_no = int(data['hint_no'])
+    print("hindi is generated" + hints[index][hint_no])
     return jsonify({"hint": hints[index][hint_no]})
 
 @app.route('/check_answer', methods=['POST'])

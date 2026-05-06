@@ -1,0 +1,74 @@
+body{
+  background-color: rgb(51, 76, 218);
+  background-image: url(C:\Users\HP\OneDrive\Desktop\guess-footballer\guess-the-footballer\react-football\public\back_image1.png);
+} 
+.footballer_index{
+   width: 400px;
+   height: 50px;
+   font-size:large;
+   font-style: normal;
+   font-family:'Courier New', Courier, monospace;
+   font-weight: bold;
+   border-radius: 9px;
+}
+.start_btn{
+   margin-left: 10px;
+    width:70px;
+    height: 40px;
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+
+}
+.get_hint_btn{
+ width:100px;
+    height: 40px;
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    
+}
+.your_answer{
+    font-size:30px;
+   font-style: normal;
+   font-family:'Courier New', Courier, monospace;
+   font-weight: bold;
+   border-radius: 9px;
+   height:50px;
+
+}
+.submit_answer_btn{
+    margin-left: 10px;
+    width:80px;
+    height: 40px;
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    
+}
+
+.hints{
+  font-size:30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+
+}
+.your_score_box{
+    border: solid 2px black;
+    width: 200px;
+    display: flex;
+    background-color: rgb(124, 227, 125);
+    font-size: 30px;
+    font-weight: bolder;
+     
+}
+.your_score{
+  width: 70px;
+  height: 35px;
+  background-color: rgb(192, 192, 34);
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  margin-right: 4px;
+  padding: 3px;
+}
