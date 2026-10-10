@@ -1,2 +1,98 @@
-THIS IS A GAME WHERE YOU HAVE TO GUESS THE NAME OF THE FOOTBLL PLAYER.INITIALLY IT HAS ONLY 5 TO 6 PLAYERS. THIS IS NOT THAT MUCH TOUGH TO GUESS THE NAME OF THE PLAYER NAME, 
-INFACT YOU CAN ALSO ASK FOR HINT 
+# Guess the Footballer
+
+A football quiz game built with a React frontend and a Flask API. Guess players from clues, take on a timed challenge, or try one of the football-themed mini-games.
+
+## Game Modes
+
+- **Guess the Footballer:** Choose a player number, get a random player, or play the daily challenge. Each round has a 60-second timer, hints, and easy, medium, or hard difficulty.
+- **Four-choice Face-off:** Reveal clues and choose the correct player from four options.
+- **60-second Quickfire:** Name as many players as you can before time runs out. Track your score and streak.
+- **Football Tic-Tac-Toe:** Play locally with a friend. Win squares by correctly guessing footballers; three marks in a row wins.
+- **Football Lab:** Try Career Trail, Teammate Link, Build the XI, Transfer Detective, Who Had the Better Season?, Badge or Shirt Reveal, Tournament Run, and Tic-Tac-Toe Variants.
+
+In the player-guessing modes, a correct answer earns 3 points and a wrong answer costs 1 point. Difficulty controls the maximum number of available clues: 4 on easy, 3 on medium, and 2 on hard. The daily challenge uses the UTC date, so players share the same daily selection.
+
+## Requirements
+
+- Python 3
+- Node.js and npm
+
+## Run Locally
+
+The frontend and API run in separate terminals.
+
+### 1. Start the Flask API
+
+From the project root, create and activate a virtual environment, then install the API dependencies and start the server:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install Flask flask-cors
+python app.py
+```
+
+The API will be available at `http://127.0.0.1:5000`.
+
+### 2. Start the React app
+
+In a second terminal:
+
+```powershell
+cd react-football
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite (usually `http://localhost:5173`). Keep the Flask API running while you play.
+
+The frontend defaults to `http://127.0.0.1:5000` for its API. To use a different API address, create `react-football/.env.local` with:
+
+```env
+VITE_API_URL=http://127.0.0.1:5000
+```
+
+Restart the Vite server after changing this setting.
+
+## Project Structure
+
+```text
+.
+|-- app.py                     # Flask API and main player/hint data
+|-- README                    # Project documentation
+|-- templates/                # Flask templates (currently empty)
+\-- react-football/
+    |-- package.json          # Frontend scripts and dependencies
+    \-- src/
+        |-- App.jsx           # Game hub and classic guessing game
+        |-- FootballChallenges.jsx
+        |-- FootballTicTacToe.jsx
+        |-- FootballExpandedGames.jsx
+        \-- footballDemoData.js # Local Football Lab sample data
+```
+
+## API Endpoints
+
+The React app calls these endpoints on the Flask server:
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| `GET` | `/game_info` | Returns the number of players available. |
+| `POST` | `/start_round` | Starts a random, daily, or multiple-choice round. |
+| `POST` | `/get_hint` | Returns a clue for a player and difficulty. |
+| `POST` | `/check_answer` | Checks a guess and returns the points earned or lost. |
+
+The POST endpoints accept JSON. For example, start a random medium round with `{"mode":"random","difficulty":"medium"}`. A guess uses `{"index":0,"guess":"Lionel Messi"}`; player indexes start at `0` in API requests, while the manual game selection starts at `1`.
+
+## Development Checks
+
+From `react-football/`, run the available frontend checks:
+
+```powershell
+npm run lint
+npm run build
+```
+
+## Data Notes
+
+The main guessing games use the player names, aliases, and clues defined in `app.py`. The Football Lab uses a smaller local sample dataset in `react-football/src/footballDemoData.js`; its statistics, transfer details, fictional squad credits, and stylized shirt designs are for gameplay only and are not live or authoritative football data.
