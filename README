@@ -4,22 +4,22 @@ A football quiz game built with a React frontend and a Flask API. Guess players 
 
 ## Game Modes
 
-- **Guess the Footballer:** Choose a player number, get a random player, or play the daily challenge. Each round has a 60-second timer, hints, and easy, medium, or hard difficulty.
+- **Guess the Footballer:** Choose a player number, get a random player, or play the daily challenge. Each round has a timer, hints, and easy or hard difficulty.
 - **Four-choice Face-off:** Reveal clues and choose the correct player from four options.
-- **60-second Quickfire:** Name as many players as you can before time runs out. Track your score and streak.
+- **Quickfire:** Name as many players as you can before time runs out. Track your score and streak.
 - **Football Tic-Tac-Toe:** Play locally with a friend. Win squares by correctly guessing footballers; three marks in a row wins.
 - **Football Lab:** Try Career Trail, Teammate Link, Build the XI, Transfer Detective, Who Had the Better Season?, Badge or Shirt Reveal, Tournament Run, and Tic-Tac-Toe Variants.
 
-In the player-guessing modes, a correct answer earns 3 points and a wrong answer costs 1 point. Difficulty controls the maximum number of available clues: 4 on easy, 3 on medium, and 2 on hard. The daily challenge uses the UTC date, so players share the same daily selection.
+Every game has Easy and Hard levels. Easy uses the wider player pool and allows all available clues for each player; it awards 3 points for a correct guess (a miss costs 1). Hard selects less-obvious football legends, gives one specific clue, and awards 5 points for a correct guess (a miss costs 2). Quickfire gives 60 seconds on Easy and 45 seconds on Hard. Football Lab challenges also change their clue order, choices, reveal limits, or squad budget to match the selected level. The daily challenge uses the UTC date and selected level, so players share the same daily selection for that level.
 
 ## Requirements
 
-- Python 3
-- Node.js and npm
+- Python 3.10+
+- Node.js 22.12+ and npm
 
 ## Run Locally
 
-The frontend and API run in separate terminals.
+The frontend and API run in separate terminals. The Vite development server proxies API requests to Flask.
 
 ### 1. Start the Flask API
 
@@ -28,7 +28,7 @@ From the project root, create and activate a virtual environment, then install t
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install Flask flask-cors
+python -m pip install -r requirements.txt
 python app.py
 ```
 
@@ -40,27 +40,46 @@ In a second terminal:
 
 ```powershell
 cd react-football
-npm install
+npm ci
 npm run dev
 ```
 
 Open the local URL printed by Vite (usually `http://localhost:5173`). Keep the Flask API running while you play.
 
-The frontend defaults to `http://127.0.0.1:5000` for its API. To use a different API address, create `react-football/.env.local` with:
+## Deploy
 
-```env
-VITE_API_URL=http://127.0.0.1:5000
-```
+The frontend and API can be deployed independently on any static-site and Python WSGI hosting providers.
 
-Restart the Vite server after changing this setting.
+### Deploy the API
+
+- Use Python 3.10 or newer and install dependencies with `pip install -r requirements.txt`.
+- Start the web process with the included `Procfile` (`gunicorn --bind 0.0.0.0:$PORT app:app`).
+- Set `CORS_ALLOWED_ORIGINS` to the exact public frontend origin, such as `https://your-game.example.com`. Separate multiple origins with commas. The API rejects the wildcard `*`.
+- Configure the host's health check to request `/health`.
+- Keep `FLASK_DEBUG` unset or set it to `0` in production.
+
+### Deploy the frontend
+
+- Set the build directory to `react-football`.
+- Install locked dependencies with `npm ci` and build with `npm run build`.
+- Publish `react-football/dist` as the static-site output.
+- Set `VITE_API_URL` to the public API origin before building, with no trailing slash. `react-football/.env.example` shows the expected format.
+
+Enable HTTPS for both hosts. After deployment, open the static-site URL and test each game mode, then confirm the API health check responds with `{"status":"ok"}`. The Vite development proxy is only for local development and is not included in the production build.
 
 ## Project Structure
 
 ```text
 .
-|-- app.py                     # Flask API and main player/hint data
-|-- README                    # Project documentation
-|-- templates/                # Flask templates (currently empty)
+|-- app.py                     # Flask application factory and server entry point
+|-- api_routes.py             # Flask routes
+|-- game_logic.py             # Round selection, clue, and answer rules
+|-- player_data.py            # Player-data loading and validation
+|-- player_data.json          # Active player names, aliases, clues, and Hard flags
+|-- requirements.txt          # Flask and production WSGI dependencies
+|-- Procfile                  # Production Gunicorn web process
+|-- additional_players.json   # Preserved supplemental data for other uses
+|-- tests/                    # Player-data, game-logic, and API tests
 \-- react-football/
     |-- package.json          # Frontend scripts and dependencies
     \-- src/
@@ -77,14 +96,21 @@ The React app calls these endpoints on the Flask server:
 
 | Method | Endpoint | Purpose |
 | --- | --- | --- |
-| `GET` | `/game_info` | Returns the number of players available. |
+| `GET` | `/game_info` | Returns the player count and each player's Easy clue limit. |
+| `GET` | `/health` | Returns the API health status for hosting health checks. |
 | `POST` | `/start_round` | Starts a random, daily, or multiple-choice round. |
 | `POST` | `/get_hint` | Returns a clue for a player and difficulty. |
 | `POST` | `/check_answer` | Checks a guess and returns the points earned or lost. |
 
-The POST endpoints accept JSON. For example, start a random medium round with `{"mode":"random","difficulty":"medium"}`. A guess uses `{"index":0,"guess":"Lionel Messi"}`; player indexes start at `0` in API requests, while the manual game selection starts at `1`.
+The POST endpoints accept JSON. For example, start a random hard round with `{"mode":"random","difficulty":"hard"}`. A guess uses `{"index":0,"guess":"Lionel Messi","difficulty":"hard"}`; player indexes start at `0` in API requests, while the manual game selection starts at `1`.
 
 ## Development Checks
+
+From the project root, run the backend tests:
+
+```powershell
+python -m unittest discover -s tests -v
+```
 
 From `react-football/`, run the available frontend checks:
 
@@ -95,4 +121,4 @@ npm run build
 
 ## Data Notes
 
-The main guessing games use the player names, aliases, and clues defined in `app.py`. The Football Lab uses a smaller local sample dataset in `react-football/src/footballDemoData.js`; its statistics, transfer details, fictional squad credits, and stylized shirt designs are for gameplay only and are not live or authoritative football data.
+The main guessing games load all 310 player records from `player_data.json`; each record includes its name, aliases, clues, and Hard-mode flag. `player_data.py` validates this data when the API starts. The file combines the supplied alias-and-clue data with app-only players, and merges the duplicate Filippo/Pippo Inzaghi entries. `additional_players.json` is preserved unchanged for other uses and is not loaded by the game. `api_routes.py` defines HTTP endpoints, while `game_logic.py` contains round, clue, and answer rules. Tests cover record integrity, aliases, clue limits, difficulty pools, and API responses. Clues tied to current clubs or recent events should still be reviewed as football facts change. The Football Lab uses a smaller local sample dataset in `react-football/src/footballDemoData.js`; its statistics, transfer details, fictional squad credits, and stylized shirt designs are for gameplay only and are not live or authoritative football data.

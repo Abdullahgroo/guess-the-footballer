@@ -26,11 +26,11 @@ async function requestHint(apiUrl, index, hintNo, difficulty) {
   return data;
 }
 
-async function requestAnswer(apiUrl, index, guess) {
+async function requestAnswer(apiUrl, index, guess, difficulty) {
   const response = await fetch(`${apiUrl}/check_answer`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ index, guess }),
+    body: JSON.stringify({ index, guess, difficulty }),
   });
   const data = await response.json();
   if (!response.ok) {
@@ -44,18 +44,17 @@ function DifficultyPicker({ value, onChange, disabled = false }) {
     <label className="challenge-difficulty">
       Difficulty
       <select value={value} onChange={(event) => onChange(event.target.value)} disabled={disabled}>
-        <option value="easy">Easy · up to 4 clues</option>
-        <option value="medium">Medium · up to 3 clues</option>
-        <option value="hard">Hard · up to 2 clues</option>
+        <option value="easy">Easy · all available clues</option>
+        <option value="hard">Hard · lesser-known legends, 1 clue</option>
       </select>
     </label>
   );
 }
 
-export function FootballMultipleChoice({ apiUrl }) {
-  const [difficulty, setDifficulty] = useState("medium");
+export function FootballMultipleChoice({ apiUrl, difficulty, onDifficultyChange }) {
   const [round, setRound] = useState(null);
   const [hints, setHints] = useState([]);
+  const [hasMoreHints, setHasMoreHints] = useState(true);
   const [hintNo, setHintNo] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [score, setScore] = useState(0);
@@ -68,6 +67,7 @@ export function FootballMultipleChoice({ apiUrl }) {
       const data = await requestRound(apiUrl, "multiple_choice", difficulty);
       setRound(data);
       setHints([]);
+      setHasMoreHints(true);
       setHintNo(0);
       setSelectedOption(null);
       setStatus("Who is the footballer? Use a clue or trust your instincts.");
@@ -85,6 +85,7 @@ export function FootballMultipleChoice({ apiUrl }) {
       const data = await requestHint(apiUrl, round.index, hintNo, difficulty);
       setHints((previous) => [...previous, data.hint]);
       setHintNo((previous) => previous + 1);
+      setHasMoreHints(data.has_more);
       setStatus(data.has_more ? "Clue unlocked. Make your pick." : "Last clue unlocked. Make your pick.");
     } catch (error) {
       setStatus(error.message);
@@ -97,10 +98,10 @@ export function FootballMultipleChoice({ apiUrl }) {
     if (!round || selectedOption !== null || busy) return;
     setBusy(true);
     try {
-      const result = await requestAnswer(apiUrl, round.index, round.options[optionIndex]);
+      const result = await requestAnswer(apiUrl, round.index, round.options[optionIndex], difficulty);
       setSelectedOption(optionIndex);
       setScore((previous) => previous + result.points);
-      setStatus(result.points > 0 ? "Correct. +3 points." : "Not this time. The correct option is highlighted.");
+      setStatus(result.points > 0 ? `Correct. +${result.points} points.` : `Not this time. ${result.points} points. The correct option is highlighted.`);
     } catch (error) {
       setStatus(error.message);
     } finally {
@@ -115,7 +116,7 @@ export function FootballMultipleChoice({ apiUrl }) {
         <div className="score-chip"><span>POINTS</span><strong>{score}</strong></div>
       </div>
       <div className="challenge-toolbar">
-        <DifficultyPicker value={difficulty} onChange={setDifficulty} disabled={Boolean(round && selectedOption === null)} />
+        <DifficultyPicker value={difficulty} onChange={onDifficultyChange} disabled={Boolean(round && selectedOption === null)} />
         <button className="primary-btn" onClick={startRound} disabled={busy}>{busy && !round ? "Starting..." : round ? "New question" : "Start game"}</button>
       </div>
       <div className="choice-clues" aria-live="polite">
@@ -139,21 +140,22 @@ export function FootballMultipleChoice({ apiUrl }) {
       </div>
       <div className="challenge-footer-row">
         <p className="challenge-status" role="status">{status}</p>
-        <button className="secondary-btn" onClick={revealHint} disabled={!round || selectedOption !== null || busy}>Reveal clue</button>
+        <button className="secondary-btn" onClick={revealHint} disabled={!round || selectedOption !== null || busy || !hasMoreHints}>Reveal clue</button>
       </div>
     </section>
   );
 }
 
-export function FootballQuickfire({ apiUrl }) {
-  const [difficulty, setDifficulty] = useState("medium");
+export function FootballQuickfire({ apiUrl, difficulty, onDifficultyChange }) {
   const [playing, setPlaying] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const roundSeconds = difficulty === "hard" ? 45 : 60;
+  const [timeLeft, setTimeLeft] = useState(roundSeconds);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
   const [round, setRound] = useState(null);
   const [hints, setHints] = useState([]);
+  const [hasMoreHints, setHasMoreHints] = useState(true);
   const [hintNo, setHintNo] = useState(0);
   const [guess, setGuess] = useState("");
   const [answered, setAnswered] = useState(false);
@@ -182,6 +184,7 @@ export function FootballQuickfire({ apiUrl }) {
       const data = await requestRound(apiUrl, "random", difficulty);
       setRound(data);
       setHints([]);
+      setHasMoreHints(true);
       setHintNo(0);
       setGuess("");
       setAnswered(false);
@@ -199,8 +202,8 @@ export function FootballQuickfire({ apiUrl }) {
     setScore(0);
     setStreak(0);
     setBestStreak(0);
-    setTimeLeft(60);
-    setStatus("The clock is on. Good luck!");
+    setTimeLeft(roundSeconds);
+    setStatus(`The ${roundSeconds}-second clock is on. Good luck!`);
     const loaded = await loadNextRound();
     if (loaded) setPlaying(true);
   };
@@ -212,6 +215,7 @@ export function FootballQuickfire({ apiUrl }) {
       const data = await requestHint(apiUrl, round.index, hintNo, difficulty);
       setHints((previous) => [...previous, data.hint]);
       setHintNo((previous) => previous + 1);
+      setHasMoreHints(data.has_more);
       setStatus("Clue revealed. Keep the clock in mind.");
     } catch (error) {
       setStatus(error.message);
@@ -227,7 +231,7 @@ export function FootballQuickfire({ apiUrl }) {
     }
     setBusy(true);
     try {
-      const result = await requestAnswer(apiUrl, round.index, guess);
+      const result = await requestAnswer(apiUrl, round.index, guess, difficulty);
       setScore((previous) => previous + result.points);
       setGuess("");
       setAnswered(true);
@@ -235,10 +239,10 @@ export function FootballQuickfire({ apiUrl }) {
         const nextStreak = streak + 1;
         setStreak(nextStreak);
         setBestStreak((previous) => Math.max(previous, nextStreak));
-        setStatus("Correct! +3 points. Ready for the next player?");
+        setStatus(`Correct! +${result.points} points. Ready for the next player?`);
       } else {
         setStreak(0);
-        setStatus("Wrong answer. -1 point. Take a breath, then go again.");
+        setStatus(`Wrong answer. ${result.points} points. Take a breath, then go again.`);
       }
     } catch (error) {
       setStatus(error.message);
@@ -248,10 +252,10 @@ export function FootballQuickfire({ apiUrl }) {
   };
 
   return (
-    <section className="game-panel challenge-game-panel quickfire-panel" aria-label="60-second quickfire game">
+    <section className="game-panel challenge-game-panel quickfire-panel" aria-label="Quickfire footballer game">
       <div className="panel-heading">
-        <div><p className="eyebrow">ONE MINUTE. NO SUBSTITUTIONS.</p><h2>60-second quickfire</h2></div>
-        <div className={`quickfire-clock ${timeLeft <= 10 && playing ? "is-low" : ""}`}><small>TIME</small><strong>{timeLeft}<i>s</i></strong></div>
+        <div><p className="eyebrow">{difficulty === "hard" ? "HARD MODE · 45 SECONDS" : "ONE MINUTE. NO SUBSTITUTIONS."}</p><h2>Quickfire</h2></div>
+        <div className={`quickfire-clock ${timeLeft <= 10 && playing ? "is-low" : ""}`}><small>TIME</small><strong>{playing || timeLeft === 0 ? timeLeft : roundSeconds}<i>s</i></strong></div>
       </div>
       <div className="quickfire-stats">
         <span>Score <strong>{score}</strong></span>
@@ -259,7 +263,7 @@ export function FootballQuickfire({ apiUrl }) {
         <span>Best <strong>{bestStreak}</strong></span>
       </div>
       <div className="challenge-toolbar">
-        <DifficultyPicker value={difficulty} onChange={setDifficulty} disabled={playing} />
+        <DifficultyPicker value={difficulty} onChange={onDifficultyChange} disabled={playing} />
         {!playing ? <button className="primary-btn" onClick={startSession} disabled={busy}>{busy ? "Starting..." : "Kick off"}</button> : null}
       </div>
       <div className="quickfire-clues" aria-live="polite">
@@ -272,7 +276,7 @@ export function FootballQuickfire({ apiUrl }) {
             <button className="primary-btn" onClick={submitGuess} disabled={answered || busy || !guess.trim()}>Submit</button>
           </div>
           <div className="action-row">
-            <button className="secondary-btn" onClick={revealHint} disabled={answered || busy}>Reveal clue</button>
+            <button className="secondary-btn" onClick={revealHint} disabled={answered || busy || !hasMoreHints}>Reveal clue</button>
             {answered && <button className="primary-btn" onClick={loadNextRound} disabled={busy || timeLeft === 0}>Next player</button>}
           </div>
         </>

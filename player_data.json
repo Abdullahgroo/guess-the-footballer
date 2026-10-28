@@ -1,0 +1,4343 @@
+[
+  {
+    "name": "Lionel Messi",
+    "aliases": [
+      "messi",
+      "leo messi",
+      "lionel andres messi",
+      "la pulga"
+    ],
+    "hints": [
+      "argentine forward and playmaker",
+      "won the 2022 fifa world cup",
+      "record eight-time ballon d'or winner",
+      "spent the majority of his prime at barcelona",
+      "known for close control and left-footed dribbling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "aliases": [
+      "cr7",
+      "cristiano ronaldo dos santos aveiro"
+    ],
+    "hints": [
+      "portuguese forward",
+      "won euro 2016 with portugal",
+      "five-time ballon d'or winner",
+      "became famous at manchester united before starring for real madrid",
+      "widely known by the initials cr7"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Zinedine Zidane",
+    "aliases": [
+      "zidane",
+      "zizou"
+    ],
+    "hints": [
+      "french attacking midfielder",
+      "scored twice in the 1998 world cup final",
+      "won the 1998 ballon d'or",
+      "led france to the 2000 european championship",
+      "famous for his marseille turn"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ronaldo Nazário",
+    "aliases": [
+      "r9",
+      "o fenomeno",
+      "the phenomenon"
+    ],
+    "hints": [
+      "brazilian striker nicknamed o fenômeno",
+      "won the 2002 world cup",
+      "three-time fifa world player of the year",
+      "starred for inter milan and real madrid",
+      "scored twice in the 2002 world cup final"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ronaldinho",
+    "aliases": [
+      "dinho",
+      "ronaldinho gaucho",
+      "gaucho"
+    ],
+    "hints": [
+      "brazilian attacking magician",
+      "won the 2002 world cup",
+      "won the 2005 ballon d'or",
+      "starred for barcelona and ac milan",
+      "known for skills, no-look passes and a broad smile"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Thierry Henry",
+    "aliases": [
+      "henry",
+      "titi henry"
+    ],
+    "hints": [
+      "french striker",
+      "won the 1998 world cup and euro 2000",
+      "became arsenal's all-time leading scorer",
+      "also starred for barcelona",
+      "known for pace and curling finishes"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Andrés Iniesta",
+    "aliases": [
+      "iniesta"
+    ],
+    "hints": [
+      "spanish midfielder",
+      "scored the winning goal in the 2010 world cup final",
+      "won euro 2008 and euro 2012",
+      "spent most of his career at barcelona",
+      "known for press-resistant close control"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Xavi Hernández",
+    "aliases": [
+      "xavi"
+    ],
+    "hints": [
+      "spanish central midfielder",
+      "formed a famous midfield partnership with iniesta",
+      "won the 2010 world cup",
+      "won euro 2008 and euro 2012",
+      "long-time barcelona captain and later a coach"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Kaká",
+    "aliases": [
+      "ricardo kaka",
+      "ricardo iz ecson dos santos leite"
+    ],
+    "hints": [
+      "brazilian attacking midfielder",
+      "won the 2007 ballon d'or",
+      "won the 2002 world cup",
+      "starred for ac milan",
+      "known for powerful runs from midfield"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Luis Figo",
+    "aliases": [
+      "figo"
+    ],
+    "hints": [
+      "portuguese winger and playmaker",
+      "won the 2001 ballon d'or",
+      "captained portugal to the euro 2004 final",
+      "starred for barcelona and real madrid",
+      "known for elegant dribbling and crossing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David Beckham",
+    "aliases": [
+      "beckham",
+      "david robert joseph beckham"
+    ],
+    "hints": [
+      "english right midfielder",
+      "famous for bending free kicks and crossing",
+      "captained england",
+      "played for manchester united and real madrid",
+      "won the 1999 treble with manchester united"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Paolo Maldini",
+    "aliases": [
+      "maldini"
+    ],
+    "hints": [
+      "italian centre-back and left-back",
+      "spent his entire club career at ac milan",
+      "won the champions league five times",
+      "reached the 1994 world cup final with italy",
+      "famous for longevity and defensive positioning"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Roberto Carlos",
+    "aliases": [],
+    "hints": [
+      "brazilian left-back",
+      "known for thunderous long-range free kicks",
+      "won the 2002 world cup",
+      "starred for real madrid",
+      "one of the most attacking full-backs of his era"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gianluigi Buffon",
+    "aliases": [
+      "buffon",
+      "gigi buffon"
+    ],
+    "hints": [
+      "italian goalkeeper",
+      "won the 2006 world cup",
+      "played for juventus for many years",
+      "was named the iffhs world's best goalkeeper multiple times",
+      "known for exceptional longevity"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Iker Casillas",
+    "aliases": [
+      "casillas",
+      "san iker"
+    ],
+    "hints": [
+      "spanish goalkeeper",
+      "captained spain to the 2010 world cup",
+      "won euro 2008 and euro 2012",
+      "spent most of his career at real madrid",
+      "often nicknamed san iker"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Oliver Kahn",
+    "aliases": [
+      "kahn"
+    ],
+    "hints": [
+      "german goalkeeper",
+      "captained germany to the 2002 world cup final",
+      "won the 2002 world cup golden ball",
+      "legendary bayern munich keeper",
+      "known for aggressive command of the penalty area"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Fabio Cannavaro",
+    "aliases": [
+      "cannavaro"
+    ],
+    "hints": [
+      "italian centre-back",
+      "captained italy to the 2006 world cup title",
+      "won the 2006 ballon d'or",
+      "starred for juventus and real madrid",
+      "known for strong positional defending"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Alessandro Nesta",
+    "aliases": [
+      "nesta"
+    ],
+    "hints": [
+      "italian centre-back",
+      "won the 2006 world cup",
+      "starred for lazio and ac milan",
+      "known for anticipation and clean tackling",
+      "formed part of italy's renowned defensive generation"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Cafu",
+    "aliases": [
+      "marcos evangelista de morais"
+    ],
+    "hints": [
+      "brazilian right-back",
+      "won the 2002 world cup",
+      "captained brazil at the 2006 world cup",
+      "won the champions league with ac milan",
+      "played for roma and ac milan"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Michael Ballack",
+    "aliases": [
+      "ballack"
+    ],
+    "hints": [
+      "german midfielder",
+      "captained germany",
+      "starred for bayern munich and chelsea",
+      "played in the 2002, 2006 and 2010 world cups",
+      "known for powerful shooting and aerial ability"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Steven Gerrard",
+    "aliases": [
+      "gerrard"
+    ],
+    "hints": [
+      "english midfielder",
+      "captained liverpool",
+      "scored in the 2005 champions league final comeback",
+      "won the 2005 champions league",
+      "known for powerful late runs and long-range goals"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Frank Lampard",
+    "aliases": [
+      "lampard"
+    ],
+    "hints": [
+      "english midfielder",
+      "chelsea's all-time leading scorer for many years",
+      "scored heavily from midfield",
+      "won the 2012 champions league with chelsea",
+      "known for arriving late in the box"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Paul Scholes",
+    "aliases": [
+      "scholes"
+    ],
+    "hints": [
+      "english midfielder",
+      "spent his senior career at manchester united",
+      "won the 1999 and 2008 champions leagues",
+      "known for precise long passing and late runs",
+      "was part of united's class of '92 era"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Wayne Rooney",
+    "aliases": [
+      "rooney"
+    ],
+    "hints": [
+      "english forward",
+      "manchester united's all-time leading scorer",
+      "won the 2008 champions league",
+      "played for everton and manchester united",
+      "became england's youngest-ever senior men's goalscorer at the time"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Didier Drogba",
+    "aliases": [
+      "drogba"
+    ],
+    "hints": [
+      "ivorian striker",
+      "scored chelsea's equaliser in the 2012 champions league final",
+      "won four premier league titles with chelsea",
+      "won the 2012 champions league",
+      "known for strength and big-game goals"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Samuel Eto’o",
+    "aliases": [
+      "eto_o"
+    ],
+    "hints": [
+      "cameroonian striker",
+      "won two africa cup of nations titles",
+      "won the champions league with barcelona and inter",
+      "scored in two champions league finals for barcelona",
+      "won the 2010 treble with inter"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Zlatan Ibrahimović",
+    "aliases": [
+      "ibrahimovic",
+      "zlatan",
+      "ibra"
+    ],
+    "hints": [
+      "swedish striker",
+      "known for spectacular acrobatic goals",
+      "won league titles in the netherlands, italy, spain and france",
+      "starred for inter, barcelona, psg and ac milan",
+      "famously used the phrase 'i am zlatan' in his autobiography"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Andrea Pirlo",
+    "aliases": [
+      "pirlo"
+    ],
+    "hints": [
+      "italian deep-lying playmaker",
+      "won the 2006 world cup",
+      "won the champions league with ac milan in 2003 and 2007",
+      "starred for juventus and ac milan",
+      "known for long passes and set pieces"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Raúl González",
+    "aliases": [
+      "raul"
+    ],
+    "hints": [
+      "spanish striker",
+      "captained real madrid for several seasons",
+      "won three champions league titles",
+      "long-time real madrid forward",
+      "later played for schalke and new york cosmos"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Pavel Nedvěd",
+    "aliases": [
+      "nedved"
+    ],
+    "hints": [
+      "czech midfielder",
+      "won the 2003 ballon d'or",
+      "starred for juventus",
+      "reached the 2003 champions league final",
+      "known for relentless running and powerful shooting"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rivaldo",
+    "aliases": [],
+    "hints": [
+      "brazilian attacking midfielder",
+      "won the 1999 ballon d'or",
+      "won the 2002 world cup",
+      "starred for barcelona and ac milan",
+      "scored a famous bicycle kick for barcelona"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Michael Owen",
+    "aliases": [
+      "owen"
+    ],
+    "hints": [
+      "english striker",
+      "won the 2001 ballon d'or",
+      "scored against argentina in the 1998 world cup knockout stage",
+      "won the 2001 uefa cup with liverpool",
+      "was known as the golden boy early in his career"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David Villa",
+    "aliases": [
+      "villa"
+    ],
+    "hints": [
+      "spanish striker",
+      "won euro 2008 and the 2010 world cup",
+      "won the 2010 world cup silver boot after scoring five goals",
+      "starred for valencia and barcelona",
+      "spain's all-time leading world cup scorer with nine goals"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Fernando Torres",
+    "aliases": [
+      "torres"
+    ],
+    "hints": [
+      "spanish striker nicknamed el niño",
+      "scored the winning goal in the euro 2008 final",
+      "won the 2010 world cup and euro 2012",
+      "starred for liverpool and chelsea",
+      "scored in the 2012 champions league semi-final against barcelona"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Francesco Totti",
+    "aliases": [
+      "totti"
+    ],
+    "hints": [
+      "italian forward",
+      "spent most of his career at roma",
+      "won the 2006 world cup",
+      "known as il capitano and a one-club icon",
+      "famous for long-range goals and the cucchiaio chip"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Alessandro Del Piero",
+    "aliases": [
+      "del_piero"
+    ],
+    "hints": [
+      "italian forward",
+      "became a juventus legend",
+      "won the 2006 world cup",
+      "helped juventus win the 1996 champions league",
+      "known for curling shots and elegant technique"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Clarence Seedorf",
+    "aliases": [
+      "seedorf"
+    ],
+    "hints": [
+      "dutch midfielder",
+      "won the champions league with three different clubs",
+      "won it with ajax, real madrid and ac milan",
+      "starred for the netherlands",
+      "known for technical versatility"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Patrick Vieira",
+    "aliases": [
+      "vieira"
+    ],
+    "hints": [
+      "french midfielder",
+      "captained arsenal's invincibles-era side",
+      "won the 1998 world cup",
+      "also won premier league titles with arsenal",
+      "known for athletic box-to-box play"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rio Ferdinand",
+    "aliases": [],
+    "hints": [
+      "english centre-back",
+      "starred for manchester united",
+      "won the 2008 champions league",
+      "formed a famous partnership with nemanja vidić",
+      "known for pace and composure on the ball"
+    ],
+    "hard": false
+  },
+  {
+    "name": "John Terry",
+    "aliases": [
+      "terry"
+    ],
+    "hints": [
+      "english centre-back",
+      "captained chelsea",
+      "won five premier league titles",
+      "won the 2012 champions league",
+      "known for last-ditch blocks and leadership"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Nemanja Vidić",
+    "aliases": [
+      "vidic"
+    ],
+    "hints": [
+      "serbian centre-back",
+      "formed a famous partnership with rio ferdinand",
+      "won five premier league titles",
+      "won the 2008 champions league",
+      "known for aerial dominance and aggressive tackling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Carles Puyol",
+    "aliases": [
+      "puyol"
+    ],
+    "hints": [
+      "spanish centre-back",
+      "captained barcelona",
+      "won the 2010 world cup and euro 2012",
+      "scored in the 2010 world cup semi-final",
+      "known for fierce leadership"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Gerard Piqué",
+    "aliases": [
+      "pique"
+    ],
+    "hints": [
+      "spanish centre-back",
+      "won the 2010 world cup and euro 2012",
+      "starred for barcelona",
+      "played in spain's defence during the 2010 world cup triumph",
+      "was married to singer shakira"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dani Alves",
+    "aliases": [
+      "daniel alves"
+    ],
+    "hints": [
+      "brazilian right-back",
+      "won the champions league three times with barcelona",
+      "won multiple league titles with barcelona",
+      "known for overlapping runs and flair",
+      "also played for sevilla, juventus and psg"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Sergio Ramos",
+    "aliases": [
+      "ramos"
+    ],
+    "hints": [
+      "spanish centre-back",
+      "captained real madrid",
+      "won five champions league titles",
+      "won the 2010 world cup and euro 2012",
+      "known for decisive goals from set pieces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Xabi Alonso",
+    "aliases": [],
+    "hints": [
+      "spanish midfielder",
+      "won the 2010 world cup",
+      "won the champions league with liverpool and real madrid",
+      "later coached bayer leverkusen and real madrid",
+      "known for calm distribution from deep"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Cesc Fàbregas",
+    "aliases": [
+      "fabregas"
+    ],
+    "hints": [
+      "spanish midfielder",
+      "won the 2010 world cup",
+      "starred for arsenal, barcelona and chelsea",
+      "captained arsenal as a teenager",
+      "known for through balls and incisive passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David Silva",
+    "aliases": [
+      "silva"
+    ],
+    "hints": [
+      "spanish midfielder",
+      "won the 2010 world cup",
+      "starred for manchester city",
+      "known as a creative left-footed playmaker",
+      "won multiple premier league titles"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Yaya Touré",
+    "aliases": [],
+    "hints": [
+      "ivorian midfielder",
+      "won the 2011-12 premier league with manchester city",
+      "starred for barcelona and manchester city",
+      "won the 2015 africa cup of nations",
+      "known for powerful surging runs"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Robin van Persie",
+    "aliases": [
+      "van_persie"
+    ],
+    "hints": [
+      "dutch striker",
+      "won back-to-back premier league golden boots in 2011-12 and 2012-13",
+      "starred for arsenal and manchester united",
+      "scored a famous flying header against spain at the 2014 world cup",
+      "known for a superb left foot"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Arjen Robben",
+    "aliases": [
+      "robben"
+    ],
+    "hints": [
+      "dutch winger",
+      "won league titles with chelsea, real madrid and bayern",
+      "won the champions league with bayern in 2013",
+      "played in the 2010 world cup final",
+      "known for cutting inside on his left foot"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Franck Ribéry",
+    "aliases": [
+      "ribery"
+    ],
+    "hints": [
+      "french winger",
+      "starred for bayern munich",
+      "won the 2013 champions league",
+      "finished third in the 2013 ballon d'or voting",
+      "known for dribbling and crossing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Bastian Schweinsteiger",
+    "aliases": [
+      "schweinsteiger"
+    ],
+    "hints": [
+      "german midfielder",
+      "won the 2014 world cup",
+      "starred for bayern munich and manchester united",
+      "won the 2013 champions league with bayern",
+      "known for stamina and pressing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Philipp Lahm",
+    "aliases": [
+      "lahm"
+    ],
+    "hints": [
+      "german full-back",
+      "captained germany to the 2014 world cup",
+      "won the champions league with bayern",
+      "could play on either flank or in midfield",
+      "known for tactical intelligence"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Manuel Neuer",
+    "aliases": [
+      "neuer"
+    ],
+    "hints": [
+      "german goalkeeper",
+      "captained germany to the 2014 world cup title",
+      "redefined the sweeper-keeper role",
+      "won the 2014 world cup golden glove",
+      "long-time bayern munich goalkeeper"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Thomas Müller",
+    "aliases": [
+      "muller"
+    ],
+    "hints": [
+      "german forward",
+      "won the 2014 world cup",
+      "won the 2010 world cup golden boot",
+      "starred for bayern munich",
+      "known for intelligent movement and raumdeuter play"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Toni Kroos",
+    "aliases": [
+      "kroos"
+    ],
+    "hints": [
+      "german midfielder",
+      "won the 2014 world cup",
+      "won four champions league titles with real madrid",
+      "known for long-range passing and shooting",
+      "played for bayern munich and real madrid"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mesut Özil",
+    "aliases": [
+      "ozil"
+    ],
+    "hints": [
+      "german attacking midfielder",
+      "starred for arsenal and real madrid",
+      "won the 2014 world cup with germany",
+      "was named germany's player of the year multiple times",
+      "known for vision and final passes"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Miroslav Klose",
+    "aliases": [
+      "klose",
+      "miro klose"
+    ],
+    "hints": [
+      "german striker",
+      "all-time leading scorer in men's world cup history",
+      "won the 2014 world cup",
+      "scored 16 world cup goals",
+      "starred for bayern munich and lazio"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Luka Modrić",
+    "aliases": [
+      "modric"
+    ],
+    "hints": [
+      "croatian midfielder",
+      "won the 2018 ballon d'or",
+      "captained croatia to the 2018 world cup final",
+      "won six champions league titles with real madrid",
+      "known for press resistance and outside-of-the-foot passes"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Karim Benzema",
+    "aliases": [
+      "benzema"
+    ],
+    "hints": [
+      "french striker",
+      "won the 2022 ballon d'or",
+      "won the 2022 champions league with real madrid",
+      "starred for lyon and real madrid",
+      "became real madrid's second-highest all-time goalscorer"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Neymar",
+    "aliases": [
+      "neymar jr",
+      "ney",
+      "neymar junior"
+    ],
+    "hints": [
+      "brazilian forward",
+      "won the 2013 confederations cup",
+      "starred for barcelona and paris saint-germain",
+      "captained brazil at major tournaments",
+      "known for flair and one-on-one dribbling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Luis Suárez",
+    "aliases": [
+      "suarez",
+      "el pistolero"
+    ],
+    "hints": [
+      "uruguayan striker",
+      "won the 2011 copa américa",
+      "starred for liverpool and barcelona",
+      "won the european golden shoe in 2014",
+      "known for pressing and prolific finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Sergio Agüero",
+    "aliases": [
+      "aguero",
+      "kun aguero",
+      "kun"
+    ],
+    "hints": [
+      "argentine striker",
+      "manchester city's all-time leading scorer",
+      "won the 2021 copa américa with argentina",
+      "scored the famous 93:20 goal against qpr in manchester city's 2012 title-winning match",
+      "also starred for atlético madrid"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Gareth Bale",
+    "aliases": [
+      "bale"
+    ],
+    "hints": [
+      "welsh winger",
+      "scored a famous overhead kick in the 2018 champions league final",
+      "won five champions league titles with real madrid",
+      "helped wales reach euro 2016 semi-finals",
+      "also starred for tottenham"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Eden Hazard",
+    "aliases": [
+      "hazard"
+    ],
+    "hints": [
+      "belgian winger",
+      "won two premier league titles with chelsea",
+      "starred for lille, chelsea and real madrid",
+      "reached the 2018 world cup semi-finals with belgium",
+      "known for close control and explosive dribbling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mohamed Salah",
+    "aliases": [
+      "salah",
+      "mo salah",
+      "egyptian king"
+    ],
+    "hints": [
+      "egyptian forward",
+      "won the premier league golden boot multiple times",
+      "starred for liverpool",
+      "won the 2021 africa cup of nations runner-up medal with egypt",
+      "known as the egyptian king"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Sadio Mané",
+    "aliases": [
+      "mane"
+    ],
+    "hints": [
+      "senegalese forward",
+      "won the 2021 africa cup of nations",
+      "starred for liverpool and bayern munich",
+      "won the 2019 champions league with liverpool",
+      "known for pressing and direct runs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "aliases": [
+      "bruyne"
+    ],
+    "hints": [
+      "belgian midfielder",
+      "won multiple premier league titles with manchester city",
+      "won the 2023 champions league",
+      "named premier league player of the season twice",
+      "known for crossing and through balls"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Harry Kane",
+    "aliases": [
+      "kane"
+    ],
+    "hints": [
+      "english striker",
+      "england's record men's goalscorer",
+      "captained England to the UEFA Euro 2024 final",
+      "starred for tottenham and bayern munich",
+      "known for dropping deep to create chances"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Robert Lewandowski",
+    "aliases": [
+      "lewandowski",
+      "lewy"
+    ],
+    "hints": [
+      "polish striker",
+      "won the 2020 and 2021 fifa best men's player awards",
+      "won the champions league with bayern in 2020",
+      "set a bundesliga record with five goals in nine minutes",
+      "starred for borussia dortmund and bayern"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Erling Haaland",
+    "aliases": [
+      "haaland",
+      "erling braut haaland"
+    ],
+    "hints": [
+      "norwegian striker",
+      "scored a champions league hat-trick for manchester city in his debut season",
+      "won the 2023 treble with manchester city",
+      "set a premier league single-season scoring record in 2022-23",
+      "son of former premier league player alf-inge haaland"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kylian Mbappé",
+    "aliases": [
+      "mbappe",
+      "donatello"
+    ],
+    "hints": [
+      "french forward",
+      "won the 2018 world cup",
+      "scored in the 2018 world cup final",
+      "won the 2022 world cup golden boot",
+      "known for pace and clinical finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Antoine Griezmann",
+    "aliases": [
+      "griezmann"
+    ],
+    "hints": [
+      "french forward",
+      "won the 2018 world cup",
+      "finished third at the 2018 ballon d'or",
+      "starred for atlético madrid and barcelona",
+      "known for versatile movement and work rate"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Virgil van Dijk",
+    "aliases": [
+      "van_dijk",
+      "vvd"
+    ],
+    "hints": [
+      "dutch centre-back",
+      "captained liverpool",
+      "won the 2019 champions league and 2020 premier league",
+      "won the 2019 uefa men's player of the year award",
+      "known for aerial strength and calm defending"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Sergio Busquets",
+    "aliases": [
+      "busquets"
+    ],
+    "hints": [
+      "spanish defensive midfielder",
+      "won the 2010 world cup",
+      "starred for barcelona",
+      "won euro 2008 and euro 2012",
+      "known for one-touch passing and positional awareness"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Marcelo",
+    "aliases": [],
+    "hints": [
+      "brazilian left-back",
+      "starred for real madrid",
+      "won five champions league titles",
+      "known for expressive attacking runs",
+      "long-time teammate of cristiano ronaldo"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dani Carvajal",
+    "aliases": [
+      "carvajal"
+    ],
+    "hints": [
+      "spanish right-back",
+      "won six champions league titles with real madrid",
+      "scored the opening goal in the 2024 champions league final",
+      "won euro 2024 with spain",
+      "known for overlapping runs and crossing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Casemiro",
+    "aliases": [],
+    "hints": [
+      "brazilian defensive midfielder",
+      "won three champions league titles with real madrid",
+      "won the 2019 copa america with brazil",
+      "starred for real madrid and manchester united",
+      "known for ball-winning and tactical fouls"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Thibaut Courtois",
+    "aliases": [
+      "courtois"
+    ],
+    "hints": [
+      "belgian goalkeeper",
+      "won the 2018 world cup golden glove",
+      "starred for real madrid",
+      "won the champions league in 2022 and 2024",
+      "known for exceptional reach"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jan Oblak",
+    "aliases": [
+      "oblak"
+    ],
+    "hints": [
+      "slovenian goalkeeper",
+      "long-time atlético madrid number one",
+      "won the 2015-16 la liga zamora trophy",
+      "known for reflex saves",
+      "captained slovenia at major international tournaments"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Alisson Becker",
+    "aliases": [
+      "becker"
+    ],
+    "hints": [
+      "brazilian goalkeeper",
+      "won the 2019 copa américa",
+      "won the 2019 champions league with liverpool",
+      "starred for roma before liverpool",
+      "known for sweeping and distribution"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ederson",
+    "aliases": [],
+    "hints": [
+      "brazilian goalkeeper",
+      "won the 2023 champions league with manchester city",
+      "known for passing range and playing out from the back",
+      "also starred for benfica",
+      "won domestic titles in england and portugal"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Riyad Mahrez",
+    "aliases": [
+      "mahrez"
+    ],
+    "hints": [
+      "algerian winger",
+      "won the 2016-17 premier league with leicester city",
+      "won the 2023 treble with manchester city",
+      "won the 2019 africa cup of nations",
+      "known for left-footed cutting inside"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Son Heung-min",
+    "aliases": [
+      "heung_min",
+      "sonny"
+    ],
+    "hints": [
+      "south korean forward",
+      "became the first asian player to win the premier league golden boot",
+      "starred for tottenham hotspur",
+      "scored a famous solo goal against burnley",
+      "captains south korea"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Angel Di María",
+    "aliases": [
+      "di_maria",
+      "angelito"
+    ],
+    "hints": [
+      "argentine winger",
+      "scored the extra-time goal in the 2022 world cup final",
+      "won the 2021 copa américa",
+      "won the champions league with real madrid",
+      "also starred for benfica, real madrid and psg"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Alexis Sánchez",
+    "aliases": [
+      "sanchez",
+      "nino maravilla"
+    ],
+    "hints": [
+      "chilean forward",
+      "won two consecutive copa américa titles in 2015 and 2016",
+      "starred for arsenal and barcelona",
+      "also played for inter and manchester united",
+      "known as el niño maravilla"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Arturo Vidal",
+    "aliases": [
+      "vidal"
+    ],
+    "hints": [
+      "chilean midfielder",
+      "won two copa américa titles",
+      "starred for juventus, bayern and barcelona",
+      "known for high energy and aggressive tackling",
+      "often played as a box-to-box midfielder"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ivan Rakitić",
+    "aliases": [
+      "rakitic"
+    ],
+    "hints": [
+      "croatian midfielder",
+      "won the 2018 world cup runner-up medal",
+      "won the 2015 champions league with barcelona",
+      "starred for barcelona and sevilla",
+      "known for accurate long passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mario Mandžukić",
+    "aliases": [
+      "mandzukic"
+    ],
+    "hints": [
+      "croatian striker",
+      "helped croatia reach the 2018 world cup final",
+      "scored in the 2018 world cup final",
+      "scored a bicycle kick in the 2017 champions league final",
+      "also starred for juventus and bayern munich"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Diego Forlán",
+    "aliases": [
+      "forlan"
+    ],
+    "hints": [
+      "uruguayan forward",
+      "won the 2010 world cup golden ball",
+      "won the 2011 copa américa",
+      "starred for atlético madrid and manchester united",
+      "known for long-range goals"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Carlos Tevez",
+    "aliases": [
+      "tevez"
+    ],
+    "hints": [
+      "argentine forward",
+      "won the 2003 copa libertadores with boca juniors",
+      "starred for manchester city and juventus",
+      "represented argentina at the 2006 and 2010 world cups",
+      "known for aggressive pressing and work rate"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Hernán Crespo",
+    "aliases": [
+      "crespo"
+    ],
+    "hints": [
+      "argentine striker",
+      "starred for lazio, inter and chelsea",
+      "scored in the 2002 world cup",
+      "scored twice in the 2005 champions league final",
+      "known for precise penalty-box finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Juan Román Riquelme",
+    "aliases": [
+      "riquelme"
+    ],
+    "hints": [
+      "argentine attacking midfielder",
+      "won the 2007 copa libertadores with boca juniors",
+      "helped argentina win olympic gold in 2008",
+      "starred for boca juniors and villarreal",
+      "known for slowing the game down with exceptional close control"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Javier Zanetti",
+    "aliases": [
+      "zanetti"
+    ],
+    "hints": [
+      "argentine right-back",
+      "captained inter milan",
+      "won the champions league in 2010",
+      "known for versatility and leadership",
+      "played over 140 times for argentina"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Esteban Cambiasso",
+    "aliases": [
+      "cambiasso"
+    ],
+    "hints": [
+      "argentine midfielder",
+      "won the 2010 champions league with inter",
+      "played for inter, real madrid and leicester city",
+      "known for defensive intelligence",
+      "was part of argentina's 2006 world cup squad"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gabriel Batistuta",
+    "aliases": [
+      "batistuta"
+    ],
+    "hints": [
+      "argentine striker",
+      "starred for fiorentina and roma",
+      "won the 1991 and 1995 copa américa with argentina",
+      "known for powerful left-footed finishing",
+      "scored 54 goals for argentina"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Juan Sebastián Verón",
+    "aliases": [
+      "veron"
+    ],
+    "hints": [
+      "argentine midfielder nicknamed la brujita",
+      "played for manchester united, chelsea and estudiantes",
+      "won the 2004 olympic gold medal",
+      "represented argentina at three world cups",
+      "known for passing and leadership"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Walter Samuel",
+    "aliases": [
+      "samuel"
+    ],
+    "hints": [
+      "argentine centre-back",
+      "won the 2010 champions league with inter",
+      "starred for roma and inter",
+      "known for physical defending",
+      "was a key part of argentina's 2006 world cup squad"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Diego Milito",
+    "aliases": [
+      "milito"
+    ],
+    "hints": [
+      "argentine striker",
+      "scored the winning goal in the 2010 champions league final",
+      "starred for inter milan",
+      "won the 2010 treble with inter",
+      "also played for real zaragoza and genoa"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Radamel Falcao",
+    "aliases": [
+      "falcao"
+    ],
+    "hints": [
+      "colombian striker",
+      "won the 2012 europa league with atlético madrid",
+      "won two europa league titles with porto and atlético",
+      "nicknamed el tigre",
+      "known for his movement inside the box"
+    ],
+    "hard": false
+  },
+  {
+    "name": "James Rodríguez",
+    "aliases": [],
+    "hints": [
+      "colombian attacking midfielder",
+      "won the 2014 world cup golden boot",
+      "scored a famous volley against uruguay in 2014",
+      "starred for real madrid and bayern munich",
+      "played for porto and monaco"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Edinson Cavani",
+    "aliases": [
+      "cavani"
+    ],
+    "hints": [
+      "uruguayan striker",
+      "starred for napoli and paris saint-germain",
+      "won the 2011 copa américa",
+      "scored 104 goals for napoli in all competitions",
+      "known for tireless pressing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Diego Godín",
+    "aliases": [
+      "godin"
+    ],
+    "hints": [
+      "uruguayan centre-back",
+      "captained uruguay",
+      "won the 2011 copa américa",
+      "starred for atlético madrid",
+      "known for aggressive marking and leadership"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Luis Fabiano",
+    "aliases": [],
+    "hints": [
+      "brazilian striker",
+      "starred for sevilla",
+      "won the 2004 copa america with brazil",
+      "scored in the 2009 confederations cup final",
+      "known for sharp penalty-box finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Juninho Pernambucano",
+    "aliases": [],
+    "hints": [
+      "brazilian set-piece specialist",
+      "famous for extraordinary free-kick goals",
+      "starred for lyon",
+      "won the 2005 confederations cup with brazil",
+      "known as juninho pernambucano"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kléberson",
+    "aliases": [],
+    "hints": [
+      "brazilian midfielder",
+      "won the 2002 world cup",
+      "played in the final against germany",
+      "played for manchester united",
+      "later played for besiktas and flamengo"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Robinho",
+    "aliases": [],
+    "hints": [
+      "brazilian forward",
+      "won the 2007 copa américa with brazil",
+      "was the tournament's top scorer in 2007",
+      "starred for real madrid and ac milan",
+      "known for flair and dribbling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Adriano",
+    "aliases": [],
+    "hints": [
+      "brazilian striker nicknamed the emperor",
+      "starred for inter milan",
+      "won the 2005 confederations cup",
+      "known for powerful left-footed shots",
+      "was a prominent brazil forward in the mid-2000s"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dida",
+    "aliases": [
+      "nelson dida"
+    ],
+    "hints": [
+      "brazilian goalkeeper",
+      "starred for ac milan",
+      "won the 2002 world cup",
+      "won the champions league in 2003 and 2007",
+      "known for penalty saves"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Júlio César",
+    "aliases": [
+      "cesar"
+    ],
+    "hints": [
+      "brazilian goalkeeper",
+      "starred for inter milan",
+      "won the 2010 champions league",
+      "won the 2004 copa américa",
+      "represented brazil at three world cups"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Thiago Silva",
+    "aliases": [],
+    "hints": [
+      "brazilian centre-back",
+      "captained brazil",
+      "won the champions league with chelsea in 2021",
+      "won the 2019 copa américa",
+      "known for longevity at centre-back"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Marquinhos",
+    "aliases": [],
+    "hints": [
+      "brazilian centre-back",
+      "captained psg for many years",
+      "won multiple ligue 1 titles",
+      "won the 2019 copa américa",
+      "also played for roma"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dani Güiza",
+    "aliases": [
+      "guiza"
+    ],
+    "hints": [
+      "spanish striker",
+      "won euro 2008 with spain",
+      "was top scorer in spain's 2007-08 league season",
+      "starred for getafe",
+      "won the 2007-08 pichichi trophy"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David Trezeguet",
+    "aliases": [
+      "trezeguet"
+    ],
+    "hints": [
+      "french striker",
+      "scored the golden goal in the euro 2000 final",
+      "won the 1998 world cup with france",
+      "won euro 2000 with france",
+      "starred for monaco and juventus"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Claude Makélélé",
+    "aliases": [
+      "makelele"
+    ],
+    "hints": [
+      "french defensive midfielder",
+      "starred for real madrid and chelsea",
+      "won the champions league with real madrid in 2002",
+      "his name is associated with the defensive midfielder role",
+      "won the 1998 world cup"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Lilian Thuram",
+    "aliases": [
+      "thuram"
+    ],
+    "hints": [
+      "french right-back and centre-back",
+      "won the 1998 world cup",
+      "starred for juventus and barcelona",
+      "won euro 2000",
+      "retired as france’s most-capped men’s player at the time"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Eric Abidal",
+    "aliases": [
+      "abidal"
+    ],
+    "hints": [
+      "french left-back",
+      "won the 2009 and 2011 champions leagues with barcelona",
+      "starred for barcelona",
+      "won the 2006 world cup runner-up medal",
+      "known for defensive reliability"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Florent Malouda",
+    "aliases": [
+      "malouda"
+    ],
+    "hints": [
+      "french winger",
+      "won the 2010 world cup runner-up medal",
+      "starred for chelsea",
+      "won the premier league with chelsea",
+      "also played for lyon and marseille"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Didier Zokora",
+    "aliases": [
+      "zokora"
+    ],
+    "hints": [
+      "ivorian midfielder",
+      "starred for tottenham and sevilla",
+      "played at the 2006 world cup with ivory coast",
+      "known for physical box-to-box midfield play",
+      "captained his national team"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Michael Essien",
+    "aliases": [
+      "essien"
+    ],
+    "hints": [
+      "ghanaian midfielder",
+      "won the 2012 champions league with chelsea",
+      "starred for lyon and chelsea",
+      "won the 2009-10 premier league with chelsea",
+      "known for powerful runs and tackling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "John Obi Mikel",
+    "aliases": [
+      "obi_mikel"
+    ],
+    "hints": [
+      "nigerian midfielder",
+      "won the 2012 champions league with chelsea",
+      "won the 2013 africa cup of nations",
+      "played as a defensive midfielder and centre-back",
+      "spent most of his career at chelsea"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jay-Jay Okocha",
+    "aliases": [
+      "okocha"
+    ],
+    "hints": [
+      "nigerian attacking midfielder",
+      "starred for bolton wanderers",
+      "famous for skills and nutmegs",
+      "played for paris saint-germain and eintracht frankfurt",
+      "captained nigeria at the 2002 world cup"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Nwankwo Kanu",
+    "aliases": [
+      "kanu"
+    ],
+    "hints": [
+      "nigerian striker",
+      "won the 1996 olympic gold medal",
+      "starred for arsenal and ajax",
+      "scored the golden goal in nigeria's 1996 olympic semi-final against brazil",
+      "known for his height and elegant movement"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kolo Touré",
+    "aliases": [],
+    "hints": [
+      "ivorian centre-back",
+      "won the 2011-12 premier league with manchester city",
+      "won the 2003-04 premier league with arsenal",
+      "represented ivory coast at the 2006 world cup",
+      "brother of yaya touré"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Emmanuel Adebayor",
+    "aliases": [
+      "adebayor"
+    ],
+    "hints": [
+      "togolese striker",
+      "starred for arsenal, manchester city and tottenham",
+      "finished third in the 2007 africa player of the year voting",
+      "captained togo at the 2006 world cup",
+      "known for his height and pace"
+    ],
+    "hard": false
+  },
+  {
+    "name": "George Weah",
+    "aliases": [
+      "weah"
+    ],
+    "hints": [
+      "liberian forward",
+      "won the 1995 ballon d'or",
+      "became liberia's president after retiring",
+      "starred for ac milan and psg",
+      "the only african-born ballon d'or winner"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Asamoah Gyan",
+    "aliases": [
+      "gyan"
+    ],
+    "hints": [
+      "ghanaian striker",
+      "scored three goals at the 2010 world cup",
+      "captained ghana at the 2014 world cup",
+      "starred for sunderland and al ain",
+      "known for his aerial finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Pierre-Emerick Aubameyang",
+    "aliases": [
+      "aubameyang"
+    ],
+    "hints": [
+      "gabonese striker",
+      "won the 2015 african player of the year award",
+      "starred for borussia dortmund and arsenal",
+      "won the 2020 fa cup with arsenal",
+      "known for pace and counter-attacking runs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mohamed Aboutrika",
+    "aliases": [
+      "aboutrika"
+    ],
+    "hints": [
+      "egyptian attacking midfielder",
+      "starred for al ahly",
+      "won the 2006 and 2008 africa cup of nations",
+      "won the 2006 afcon golden boot",
+      "a major figure in african club football"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Hossam Hassan",
+    "aliases": [
+      "hassan"
+    ],
+    "hints": [
+      "egyptian striker",
+      "one of the country's all-time leading scorers",
+      "played in five africa cup of nations tournaments",
+      "starred for al ahly and zamalek",
+      "known for his long career in egyptian football"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Seydou Keita",
+    "aliases": [
+      "keita"
+    ],
+    "hints": [
+      "malian midfielder",
+      "won the 2010 champions league with barcelona",
+      "starred for sevilla and barcelona",
+      "won the africa cup of nations runner-up medal in 2002",
+      "known for positional versatility"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Samuel Kuffour",
+    "aliases": [
+      "kuffour"
+    ],
+    "hints": [
+      "ghanaian centre-back",
+      "starred for bayern munich",
+      "won the 2001 champions league",
+      "played for ghana at the 2006 world cup",
+      "known for his strength and aerial ability"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Sulley Muntari",
+    "aliases": [
+      "muntari"
+    ],
+    "hints": [
+      "ghanaian midfielder",
+      "played for inter milan and sunderland",
+      "represented ghana at the 2010 world cup",
+      "ghana were runners-up at the 2010 africa cup of nations",
+      "known for powerful shooting"
+    ],
+    "hard": false
+  },
+  {
+    "name": "John Mensah",
+    "aliases": [
+      "mensah"
+    ],
+    "hints": [
+      "ghanaian centre-back",
+      "played for rennes and sunderland",
+      "represented ghana at the 2006 and 2010 world cups",
+      "known for physical defending",
+      "was a long-time ghana international"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Benni McCarthy",
+    "aliases": [
+      "mccarthy"
+    ],
+    "hints": [
+      "south african striker",
+      "starred for blackburn rovers and porto",
+      "won the 2004 champions league with porto",
+      "was a key south africa forward at the 2002 world cup",
+      "known for powerful finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Lucas Radebe",
+    "aliases": [
+      "radebe"
+    ],
+    "hints": [
+      "south african centre-back",
+      "captained leeds united",
+      "starred for kaizer chiefs and leeds",
+      "played at the 1998 and 2002 world cups",
+      "nicknamed 'the chief'"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Park Ji-sung",
+    "aliases": [
+      "ji_sung"
+    ],
+    "hints": [
+      "south korean midfielder",
+      "won four premier league titles with manchester united",
+      "won the 2008 champions league",
+      "starred under sir alex ferguson",
+      "known for exceptional work rate"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Shinji Kagawa",
+    "aliases": [
+      "kagawa"
+    ],
+    "hints": [
+      "japanese attacking midfielder",
+      "starred for borussia dortmund and manchester united",
+      "won two bundesliga titles with dortmund",
+      "won the 2011 asian cup with japan",
+      "known for quick combinations"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Keisuke Honda",
+    "aliases": [
+      "honda"
+    ],
+    "hints": [
+      "japanese midfielder",
+      "starred for cska moscow and ac milan",
+      "won the 2011 asian cup with japan",
+      "played in three world cups",
+      "known for long-range free kicks"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Hidetoshi Nakata",
+    "aliases": [
+      "nakata"
+    ],
+    "hints": [
+      "japanese playmaker",
+      "starred for roma and parma",
+      "played at the 2002 and 2006 world cups",
+      "one of japan's first major stars in european football",
+      "known for technical skill"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ali Karimi",
+    "aliases": [
+      "karimi"
+    ],
+    "hints": [
+      "iranian playmaker",
+      "starred for bayern munich",
+      "won the 2004 asian footballer of the year award",
+      "played in the 2006 world cup",
+      "known as the asian wizard"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mehdi Mahdavikia",
+    "aliases": [
+      "mahdavikia"
+    ],
+    "hints": [
+      "iranian winger",
+      "starred for hamburg and eintracht frankfurt",
+      "played at the 2002 and 2006 world cups",
+      "won the 1998 asian games gold medal with iran",
+      "known for speed and crossing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Tim Cahill",
+    "aliases": [
+      "cahill"
+    ],
+    "hints": [
+      "australian attacking midfielder",
+      "starred for everton",
+      "scored australia's first goal at the 2006 world cup",
+      "played in four world cups",
+      "known for late runs into the box"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Harry Kewell",
+    "aliases": [
+      "kewell"
+    ],
+    "hints": [
+      "australian winger",
+      "starred for leeds united and liverpool",
+      "played at the 2002 and 2006 world cups",
+      "won the 2000 oceania nations cup",
+      "known for left-footed crossing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mark Viduka",
+    "aliases": [
+      "viduka"
+    ],
+    "hints": [
+      "australian striker",
+      "starred for leeds united and middlesbrough",
+      "played at the 2006 world cup",
+      "one of australia's leading scorers in the 2000s",
+      "known for aerial strength"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mile Jedinak",
+    "aliases": [
+      "jedinak"
+    ],
+    "hints": [
+      "australian defensive midfielder",
+      "captained australia at the 2018 world cup",
+      "played for crystal palace and aston villa",
+      "won the 2015 asian cup with australia",
+      "known for penalty-taking"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David de Gea",
+    "aliases": [
+      "de_gea",
+      "david de gea quintana"
+    ],
+    "hints": [
+      "spanish goalkeeper",
+      "starred for manchester united",
+      "won the 2013 premier league with united",
+      "represented spain at the 2014 world cup",
+      "known for reflex saves and shot-stopping"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Petr Čech",
+    "aliases": [
+      "cech"
+    ],
+    "hints": [
+      "czech goalkeeper",
+      "starred for chelsea",
+      "won the 2012 champions league with chelsea",
+      "won four premier league golden gloves",
+      "known for wearing a protective headguard after a skull injury"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Edwin van der Sar",
+    "aliases": [
+      "van_der_sar"
+    ],
+    "hints": [
+      "dutch goalkeeper",
+      "won the champions league with ajax and manchester united",
+      "starred for ajax, juventus and manchester united",
+      "saved a penalty in the 2008 champions league final shootout",
+      "known for calm distribution and longevity"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Victor Valdés",
+    "aliases": [
+      "valdes"
+    ],
+    "hints": [
+      "spanish goalkeeper",
+      "won multiple champions league titles with barcelona",
+      "won euro 2008 and the 2010 world cup",
+      "known for playing as a sweeper-keeper",
+      "long-time barcelona number one"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Pepe Reina",
+    "aliases": [
+      "reina"
+    ],
+    "hints": [
+      "spanish goalkeeper",
+      "won the 2010 world cup",
+      "starred for liverpool and bayern munich",
+      "was liverpool's first-choice keeper before alisson",
+      "known as pepe reina"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Keylor Navas",
+    "aliases": [
+      "navas"
+    ],
+    "hints": [
+      "costa rican goalkeeper",
+      "won three consecutive champions leagues with real madrid",
+      "starred for real madrid and psg",
+      "played in the 2014 world cup quarter-finals",
+      "known for reflex saves"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gianluigi Donnarumma",
+    "aliases": [
+      "donnarumma"
+    ],
+    "hints": [
+      "italian goalkeeper",
+      "became italy's youngest senior goalkeeper at the time of his debut",
+      "won euro 2020 with italy",
+      "starred for ac milan and psg",
+      "won the 2021 european championship player of the tournament award"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Emiliano Martínez",
+    "aliases": [
+      "martinez"
+    ],
+    "hints": [
+      "argentine goalkeeper",
+      "saved penalties in the 2021 copa américa and 2022 world cup shootouts",
+      "won the 2022 world cup golden glove",
+      "starred for aston villa",
+      "known as dibu"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Hugo Lloris",
+    "aliases": [
+      "lloris"
+    ],
+    "hints": [
+      "french goalkeeper",
+      "captained france to the 2018 world cup title",
+      "starred for tottenham",
+      "represented france at the 2010, 2014, 2018 and 2022 world cups",
+      "also led france to the 2022 world cup final"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Samir Handanović",
+    "aliases": [
+      "handanovic"
+    ],
+    "hints": [
+      "slovenian goalkeeper",
+      "starred for inter milan",
+      "won serie a goalkeeper awards",
+      "represented slovenia at the 2010 world cup",
+      "known for reflexes and penalty saves"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rogério Ceni",
+    "aliases": [
+      "ceni"
+    ],
+    "hints": [
+      "brazilian goalkeeper and prolific penalty taker",
+      "scored over 100 career goals as a goalkeeper",
+      "starred for são paulo",
+      "won the 2005 club world championship",
+      "famous for direct free kicks"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jens Lehmann",
+    "aliases": [
+      "lehmann"
+    ],
+    "hints": [
+      "german goalkeeper",
+      "starred for arsenal and borussia dortmund",
+      "won the 1997 champions league with dortmund",
+      "played in the 2006 world cup",
+      "known for an emotional personality"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Brad Friedel",
+    "aliases": [
+      "friedel"
+    ],
+    "hints": [
+      "american goalkeeper",
+      "played in the premier league for blackburn, aston villa and tottenham",
+      "represented the usa at three world cups",
+      "known for longevity",
+      "made more than 450 premier league appearances"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Shay Given",
+    "aliases": [
+      "given"
+    ],
+    "hints": [
+      "irish goalkeeper",
+      "starred for newcastle united",
+      "represented the republic of ireland at the 2002 world cup",
+      "known for reflex saves",
+      "spent many years in the premier league"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David James",
+    "aliases": [],
+    "hints": [
+      "english goalkeeper",
+      "played for liverpool, aston villa and west ham",
+      "represented england at the 2002 world cup",
+      "made over 500 premier league appearances",
+      "known for longevity across many clubs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Maarten Stekelenburg",
+    "aliases": [
+      "stekelenburg"
+    ],
+    "hints": [
+      "dutch goalkeeper",
+      "reached the 2010 world cup final",
+      "was the netherlands' first-choice keeper during that tournament",
+      "played for ajax and roma",
+      "also represented the netherlands at euro 2008"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Marc-André ter Stegen",
+    "aliases": [
+      "ter_stegen"
+    ],
+    "hints": [
+      "german-born spanish goalkeeper",
+      "starred for barcelona",
+      "won the 2015 champions league",
+      "won the 2017 confederations cup with germany",
+      "known for distribution and sweeping"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Wojciech Szczęsny",
+    "aliases": [
+      "szczesny"
+    ],
+    "hints": [
+      "polish goalkeeper",
+      "starred for arsenal and juventus",
+      "won three consecutive serie a titles with juventus from 2018 to 2020",
+      "represented poland at multiple european championships",
+      "known as szczesny"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mike Maignan",
+    "aliases": [
+      "maignan"
+    ],
+    "hints": [
+      "french goalkeeper",
+      "won the 2022-23 serie a title with ac milan",
+      "known for his reflexes and footwork",
+      "became france's first-choice keeper after hugo lloris",
+      "also played for lille"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Yassine Bounou",
+    "aliases": [
+      "bono",
+      "bounou",
+      "yassine bono"
+    ],
+    "hints": [
+      "moroccan goalkeeper nicknamed bono",
+      "starred for sevilla and al-hilal",
+      "helped morocco become the first african team to reach a world cup semi-final in 2022",
+      "won the 2022 europa league with sevilla",
+      "known for penalty saves"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Raphaël Varane",
+    "aliases": [
+      "varane"
+    ],
+    "hints": [
+      "french centre-back",
+      "won the 2018 world cup",
+      "won the champions league with real madrid",
+      "starred for real madrid and manchester united",
+      "known for pace and recovery defending"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Pepe",
+    "aliases": [
+      "kepler laveran de lima ferreira"
+    ],
+    "hints": [
+      "portuguese centre-back known simply by one name",
+      "won euro 2016 with portugal",
+      "won the champions league with real madrid",
+      "starred for porto, real madrid and besiktas",
+      "known for physical defending"
+    ],
+    "hard": false
+  },
+  {
+    "name": "John Stones",
+    "aliases": [
+      "stones"
+    ],
+    "hints": [
+      "english centre-back",
+      "won euro 2020 runner-up medal and euro 2024",
+      "starred for manchester city",
+      "won the 2023 champions league",
+      "known for ball-playing from defence"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Patrice Evra",
+    "aliases": [
+      "evra"
+    ],
+    "hints": [
+      "french left-back",
+      "starred for manchester united",
+      "won five premier league titles with united",
+      "reached the 2009 and 2011 champions league finals",
+      "also played for juventus and marseille"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ashley Cole",
+    "aliases": [
+      "cole"
+    ],
+    "hints": [
+      "english left-back",
+      "won three premier league titles with arsenal and chelsea",
+      "represented england at three world cups",
+      "starred for chelsea and arsenal",
+      "often named among the era's best left-backs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gary Neville",
+    "aliases": [
+      "neville"
+    ],
+    "hints": [
+      "english right-back",
+      "spent his senior club career at manchester united",
+      "won six premier league titles",
+      "won the 1999 and 2008 champions leagues",
+      "part of the class of '92"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Javier Mascherano",
+    "aliases": [
+      "mascherano"
+    ],
+    "hints": [
+      "argentine midfielder turned centre-back",
+      "won the 2004 and 2008 olympic gold medals",
+      "starred for barcelona and liverpool",
+      "won the champions league with barcelona in 2011 and 2015",
+      "known for relentless tackling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ricardo Carvalho",
+    "aliases": [
+      "carvalho"
+    ],
+    "hints": [
+      "portuguese centre-back",
+      "won euro 2016",
+      "won the champions league with porto and real madrid",
+      "starred for chelsea",
+      "known for tactical discipline"
+    ],
+    "hard": false
+  },
+  {
+    "name": "David Alaba",
+    "aliases": [
+      "alaba"
+    ],
+    "hints": [
+      "austrian international of nigerian heritage",
+      "won the champions league with bayern munich",
+      "starred for bayern and real madrid",
+      "won multiple bundesliga titles",
+      "can play centre-back, left-back or midfield"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mats Hummels",
+    "aliases": [
+      "hummels"
+    ],
+    "hints": [
+      "german centre-back",
+      "won the 2014 world cup",
+      "starred for borussia dortmund and bayern munich",
+      "scored against france in the 2014 world cup quarter-final",
+      "known for passing from the back"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jerome Boateng",
+    "aliases": [
+      "boateng"
+    ],
+    "hints": [
+      "german centre-back",
+      "won the 2014 world cup",
+      "starred for bayern munich",
+      "won the 2013 champions league",
+      "brother of kevin-prince boateng"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Vincent Kompany",
+    "aliases": [
+      "kompany"
+    ],
+    "hints": [
+      "belgian centre-back",
+      "captained manchester city",
+      "won four premier league titles",
+      "joined manchester city from hamburg in 2008",
+      "later managed burnley"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Jaap Stam",
+    "aliases": [
+      "stam"
+    ],
+    "hints": [
+      "dutch centre-back",
+      "starred for manchester united and lazio",
+      "won the 1999 champions league with manchester united",
+      "represented the netherlands at euro 2000",
+      "known for aggressive marking"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Lucio",
+    "aliases": [],
+    "hints": [
+      "brazilian centre-back",
+      "won the 2002 world cup",
+      "won the champions league with inter in 2010",
+      "starred for inter and juventus",
+      "known for power and aerial ability"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Giorgio Chiellini",
+    "aliases": [
+      "chiellini"
+    ],
+    "hints": [
+      "italian centre-back",
+      "captained juventus",
+      "won euro 2020 with italy",
+      "starred for juventus and lafc",
+      "known for aggressive defending"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Leonardo Bonucci",
+    "aliases": [
+      "bonucci"
+    ],
+    "hints": [
+      "italian centre-back",
+      "won euro 2020 with italy",
+      "starred for juventus and ac milan",
+      "known for building play from defence",
+      "part of italy's three-man back line"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Andrea Barzagli",
+    "aliases": [
+      "barzagli"
+    ],
+    "hints": [
+      "italian centre-back",
+      "won the 2006 world cup",
+      "won seven serie a titles with juventus",
+      "starred for juventus",
+      "known for positional discipline"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gianluca Zambrotta",
+    "aliases": [
+      "zambrotta"
+    ],
+    "hints": [
+      "italian full-back",
+      "won the 2006 world cup",
+      "starred for juventus, barcelona and ac milan",
+      "won euro 2000 runner-up medal",
+      "could play on either flank"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Maicon",
+    "aliases": [],
+    "hints": [
+      "brazilian right-back",
+      "won the champions league with inter in 2010",
+      "starred for inter and manchester city",
+      "won the 2005 confederations cup",
+      "known for speed and attacking overlaps"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jordi Alba",
+    "aliases": [
+      "alba"
+    ],
+    "hints": [
+      "spanish left-back",
+      "won the 2010 world cup and euro 2012",
+      "starred for barcelona",
+      "scored in the euro 2012 final",
+      "known for attacking runs down the left"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Andrew Robertson",
+    "aliases": [
+      "robertson"
+    ],
+    "hints": [
+      "scottish left-back",
+      "captained liverpool",
+      "won the 2019 champions league and 2020 premier league",
+      "starred for hull city and liverpool",
+      "known for crossing and relentless running"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Trent Alexander-Arnold",
+    "aliases": [
+      "alexander_arnold"
+    ],
+    "hints": [
+      "english right-back",
+      "won the 2019 champions league with liverpool",
+      "known for elite crossing and set pieces",
+      "starred for liverpool and later real madrid",
+      "came through liverpool's academy"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kyle Walker",
+    "aliases": [
+      "walker"
+    ],
+    "hints": [
+      "english right-back",
+      "won multiple premier league titles with manchester city",
+      "won the 2023 champions league",
+      "starred for tottenham and manchester city",
+      "known for recovery pace"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Antonio Rüdiger",
+    "aliases": [
+      "rudiger"
+    ],
+    "hints": [
+      "german centre-back",
+      "won the 2021 champions league with chelsea",
+      "represented germany at the 2018 and 2022 world cups",
+      "starred for chelsea and real madrid",
+      "known for aggressive defending and pace"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Éder Militão",
+    "aliases": [
+      "militao"
+    ],
+    "hints": [
+      "brazilian centre-back",
+      "won the 2022 champions league with real madrid",
+      "starred for porto and real madrid",
+      "won the 2019 copa américa",
+      "known for pace and aerial strength"
+    ],
+    "hard": false
+  },
+  {
+    "name": "William Saliba",
+    "aliases": [
+      "saliba"
+    ],
+    "hints": [
+      "french centre-back",
+      "starred for marseille and arsenal",
+      "made his france senior debut in 2022",
+      "helped arsenal finish second in the 2023-24 premier league",
+      "known for pace and recovery tackles"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Alessandro Bastoni",
+    "aliases": [
+      "bastoni"
+    ],
+    "hints": [
+      "italian centre-back",
+      "starred for inter milan",
+      "won euro 2020 with italy",
+      "known for left-footed distribution",
+      "part of italy's three-man defence"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Achraf Hakimi",
+    "aliases": [
+      "hakimi"
+    ],
+    "hints": [
+      "moroccan right-back",
+      "won the champions league with real madrid",
+      "helped morocco reach the 2022 world cup semi-finals",
+      "starred for psg, inter and real madrid",
+      "known for speed and attacking runs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rodri",
+    "aliases": [],
+    "hints": [
+      "spanish defensive midfielder",
+      "won euro 2024 with spain",
+      "won the 2023 champions league with manchester city",
+      "won the 2024 ballon d'or",
+      "known for positional intelligence"
+    ],
+    "hard": false
+  },
+  {
+    "name": "N'Golo Kanté",
+    "aliases": [
+      "kante"
+    ],
+    "hints": [
+      "french midfielder",
+      "won the 2018 world cup",
+      "won the 2021 champions league with chelsea",
+      "starred for leicester city and chelsea",
+      "known for ball recoveries and tireless running"
+    ],
+    "hard": true
+  },
+  {
+    "name": "Fernandinho",
+    "aliases": [],
+    "hints": [
+      "brazilian defensive midfielder",
+      "won two premier league titles with manchester city",
+      "starred for manchester city and shakhtar donetsk",
+      "won the 2019 copa américa",
+      "known for pressing and tactical fouls"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Michael Carrick",
+    "aliases": [
+      "carrick"
+    ],
+    "hints": [
+      "english midfielder",
+      "starred for manchester united",
+      "won five premier league titles",
+      "known for positional discipline and passing range",
+      "also played for west ham and middlesbrough"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Roy Keane",
+    "aliases": [
+      "keane"
+    ],
+    "hints": [
+      "irish midfielder",
+      "captained manchester united",
+      "won seven premier league titles",
+      "won the 1999 champions league",
+      "known for intensity and leadership"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Roy Makaay",
+    "aliases": [
+      "makaay"
+    ],
+    "hints": [
+      "dutch striker",
+      "starred for deportivo la coruña and bayern munich",
+      "won the 2002-03 pichichi trophy as la liga top scorer",
+      "scored 29 league goals in that campaign",
+      "scored the fastest goal in champions league history at the time in 2007"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Deco",
+    "aliases": [],
+    "hints": [
+      "portuguese playmaker",
+      "won the 2004 champions league with porto",
+      "starred for barcelona and chelsea",
+      "won euro 2004 runner-up medal",
+      "known for quick passing and technical control"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rui Costa",
+    "aliases": [
+      "costa"
+    ],
+    "hints": [
+      "portuguese attacking midfielder",
+      "starred for fiorentina and ac milan",
+      "won the 2004 european championship runner-up medal",
+      "was a key portugal playmaker in the early 2000s",
+      "known for vision and set pieces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Anderson",
+    "aliases": [],
+    "hints": [
+      "brazilian midfielder",
+      "won the 2008 champions league with manchester united",
+      "also played for porto and fiorentina",
+      "won the 2008 fifa club world cup",
+      "later used the single name anderson"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dimitri Payet",
+    "aliases": [
+      "payet"
+    ],
+    "hints": [
+      "french attacking midfielder",
+      "starred for west ham and marseille",
+      "scored a famous free kick against manchester united in 2016",
+      "represented france at euro 2016",
+      "known for set-piece delivery"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Juan Mata",
+    "aliases": [
+      "mata"
+    ],
+    "hints": [
+      "spanish attacking midfielder",
+      "won the 2012 champions league with chelsea",
+      "won the 2010 world cup and euro 2012",
+      "starred for chelsea and manchester united",
+      "known for creativity and left-footed passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Bernardo Silva",
+    "aliases": [],
+    "hints": [
+      "portuguese midfielder",
+      "won the 2023 champions league with manchester city",
+      "won multiple premier league titles",
+      "starred for monaco and manchester city",
+      "known for pressing and close control"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Bruno Fernandes",
+    "aliases": [
+      "fernandes"
+    ],
+    "hints": [
+      "portuguese attacking midfielder",
+      "captains manchester united",
+      "won the 2023 efl cup with manchester united",
+      "represented portugal at euro 2020 and euro 2024",
+      "known for chance creation and penalties"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Martin Ødegaard",
+    "aliases": [
+      "odegaard",
+      "martin degaard"
+    ],
+    "hints": [
+      "norwegian attacking midfielder",
+      "captains arsenal",
+      "starred for real sociedad and arsenal",
+      "made his real madrid debut as a teenager",
+      "known for left-footed passing and pressing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jude Bellingham",
+    "aliases": [
+      "bellingham",
+      "jude victor william bellingham"
+    ],
+    "hints": [
+      "english midfielder",
+      "won the 2023-24 champions league with real madrid",
+      "starred for borussia dortmund and real madrid",
+      "won the 2023-24 la liga title with real madrid",
+      "became a regular england international as a teenager"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Pedri",
+    "aliases": [],
+    "hints": [
+      "spanish midfielder",
+      "came through barcelona's la masia academy",
+      "won the 2021 golden boy award",
+      "won the 2021 kopa trophy",
+      "known for close control and line-breaking passes"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gavi",
+    "aliases": [],
+    "hints": [
+      "spanish midfielder",
+      "came through barcelona's la masia academy",
+      "won the 2022 golden boy award",
+      "won the 2022 kopa trophy",
+      "known for aggressive pressing and energy"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Jamal Musiala",
+    "aliases": [
+      "musiala"
+    ],
+    "hints": [
+      "german attacking midfielder",
+      "starred for bayern munich",
+      "won the 2020 champions league with bayern",
+      "represented germany at euro 2024",
+      "known for dribbling in tight spaces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Florian Wirtz",
+    "aliases": [
+      "wirtz"
+    ],
+    "hints": [
+      "german attacking midfielder",
+      "won the 2023-24 bundesliga with bayer leverkusen",
+      "won the 2024 german footballer of the year award",
+      "starred for leverkusen and liverpool",
+      "known for dribbling and creative passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Federico Valverde",
+    "aliases": [
+      "valverde"
+    ],
+    "hints": [
+      "uruguayan midfielder",
+      "won the 2022 and 2024 champions leagues with real madrid",
+      "starred for real madrid",
+      "represented uruguay at multiple copa america tournaments",
+      "known for stamina and long-range shooting"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Paul Pogba",
+    "aliases": [
+      "pogba"
+    ],
+    "hints": [
+      "french midfielder",
+      "won the 2018 world cup",
+      "won the 2017 europa league with manchester united",
+      "won the 2013 u-20 world cup",
+      "known for powerful runs and flair"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Marco Verratti",
+    "aliases": [
+      "verratti"
+    ],
+    "hints": [
+      "italian midfielder",
+      "starred for psg",
+      "won the 2021 european championship with italy",
+      "known for press resistance and close control",
+      "played for pescara and paris saint-germain"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rafael van der Vaart",
+    "aliases": [
+      "vaart"
+    ],
+    "hints": [
+      "dutch attacking midfielder",
+      "starred for real madrid and tottenham",
+      "played in the 2010 world cup final",
+      "also played for ajax and hamburger sv",
+      "known for left-footed passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Wesley Sneijder",
+    "aliases": [
+      "sneijder"
+    ],
+    "hints": [
+      "dutch attacking midfielder",
+      "won the 2010 champions league with inter",
+      "starred for ajax, real madrid and inter",
+      "reached the 2010 world cup final",
+      "known for through balls and shooting"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ruud van Nistelrooy",
+    "aliases": [
+      "nistelrooy"
+    ],
+    "hints": [
+      "dutch striker",
+      "starred for manchester united and real madrid",
+      "won the 2002-03 premier league golden boot",
+      "won the 2007-08 la liga with real madrid",
+      "known for poacher's movement"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dirk Kuyt",
+    "aliases": [
+      "kuyt"
+    ],
+    "hints": [
+      "dutch forward",
+      "played for liverpool and fenerbahçe",
+      "reached the 2010 world cup final",
+      "won the 2012 league cup with liverpool",
+      "known for work rate and pressing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Memphis Depay",
+    "aliases": [
+      "depay"
+    ],
+    "hints": [
+      "dutch forward",
+      "starred for barcelona, manchester united and lyon",
+      "scored more than 40 goals for the netherlands",
+      "also starred for psv and barcelona",
+      "captains the netherlands at times and plays as a forward"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dennis Bergkamp",
+    "aliases": [
+      "bergkamp"
+    ],
+    "hints": [
+      "dutch forward",
+      "starred for arsenal",
+      "scored a famous flying volley against newcastle",
+      "represented the netherlands at the 1998 world cup",
+      "known for intelligent movement and technique"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ruud Gullit",
+    "aliases": [
+      "gullit"
+    ],
+    "hints": [
+      "dutch midfielder",
+      "won euro 1988 with the netherlands",
+      "won the 1987 ballon d'or",
+      "starred for ac milan and chelsea",
+      "was a versatile attacker and midfielder"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Henrik Larsson",
+    "aliases": [
+      "larsson"
+    ],
+    "hints": [
+      "swedish striker",
+      "starred for celtic and barcelona",
+      "won four scottish league titles with celtic",
+      "won the 2006 champions league with barcelona",
+      "was a key sweden forward at euro 2004"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Freddie Ljungberg",
+    "aliases": [
+      "ljungberg"
+    ],
+    "hints": [
+      "swedish winger",
+      "starred for arsenal",
+      "was part of arsenal's invincibles",
+      "won the 2002 and 2004 premier league titles",
+      "known for late runs into the box"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ryan Giggs",
+    "aliases": [
+      "giggs"
+    ],
+    "hints": [
+      "welsh winger",
+      "won 13 premier league titles with manchester united",
+      "won two champions league titles",
+      "played his entire senior career at manchester united",
+      "became wales manager after retiring"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Eric Cantona",
+    "aliases": [
+      "cantona"
+    ],
+    "hints": [
+      "french forward",
+      "starred for manchester united",
+      "won four premier league titles",
+      "known for his collar-up celebration and charisma",
+      "was a defining star of manchester united in the early premier league era"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ole Gunnar Solskjær",
+    "aliases": [
+      "solskj_r",
+      "ole gunnar solskj r"
+    ],
+    "hints": [
+      "norwegian striker",
+      "scored the winning goal in the 1999 champions league final",
+      "starred for manchester united",
+      "won six premier league titles",
+      "later managed manchester united"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dimitar Berbatov",
+    "aliases": [
+      "berbatov"
+    ],
+    "hints": [
+      "bulgarian striker",
+      "starred for tottenham and manchester united",
+      "won two premier league titles",
+      "was known for an elegant first touch and finishing",
+      "famous for elegant first touch"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Carlos Valderrama",
+    "aliases": [
+      "valderrama",
+      "el pibe"
+    ],
+    "hints": [
+      "colombian playmaker",
+      "known for his distinctive long curly hair",
+      "starred for montpellier and real valladolid",
+      "captained colombia at the 1990, 1994 and 1998 world cups",
+      "was a creative number ten"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Juan Cuadrado",
+    "aliases": [
+      "cuadrado"
+    ],
+    "hints": [
+      "colombian winger",
+      "represented colombia at multiple copa américa tournaments",
+      "starred for juventus, chelsea and inter",
+      "won the 2021 copa américa third place with colombia",
+      "known for explosive pace and crossing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Christian Vieri",
+    "aliases": [
+      "vieri"
+    ],
+    "hints": [
+      "italian striker",
+      "starred for inter, juventus and atlético madrid",
+      "won the 2002-03 serie a top-scorer award",
+      "scored in the 1998 world cup",
+      "known for power and aerial finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Filippo Inzaghi",
+    "aliases": [
+      "pippo inzaghi"
+    ],
+    "hints": [
+      "italian striker",
+      "starred for ac milan and juventus",
+      "won the 2006 world cup",
+      "scored in the 2007 champions league final",
+      "known for poaching goals and timing runs",
+      "italian striker known as pippo",
+      "famous for poacher-style movement in the box"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Antonio Di Natale",
+    "aliases": [
+      "natale"
+    ],
+    "hints": [
+      "italian striker",
+      "starred for udinese",
+      "won the 2010-11 serie a top scorer award",
+      "scored more than 200 serie a goals",
+      "known for curling shots and longevity"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Marek Hamšík",
+    "aliases": [
+      "hamsik"
+    ],
+    "hints": [
+      "slovak midfielder",
+      "captained napoli",
+      "became napoli's all-time leading scorer before being passed by mertens",
+      "starred for napoli for over a decade",
+      "known for long-range shooting"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Gonzalo Higuaín",
+    "aliases": [
+      "higuain"
+    ],
+    "hints": [
+      "argentine striker",
+      "starred for real madrid, napoli and juventus",
+      "represented argentina at the 2010 and 2014 world cups",
+      "won two serie a titles with juventus",
+      "known for one-touch finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Paulo Dybala",
+    "aliases": [
+      "dybala"
+    ],
+    "hints": [
+      "argentine forward",
+      "won the 2022 world cup",
+      "starred for juventus and roma",
+      "won the 2022 world cup with argentina",
+      "known for his left foot and free kicks"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Lautaro Martínez",
+    "aliases": [],
+    "hints": [
+      "argentine striker",
+      "won the 2022 world cup",
+      "starred for inter milan",
+      "scored in the 2022 world cup final",
+      "known for aggressive pressing and movement"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Vinícius Júnior",
+    "aliases": [
+      "junior"
+    ],
+    "hints": [
+      "brazilian forward",
+      "won the 2022 champions league with real madrid",
+      "scored the winning goal in the 2022 champions league final",
+      "scored in the 2024 champions league final",
+      "known for dribbling and direct runs on the left"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rodrygo",
+    "aliases": [],
+    "hints": [
+      "brazilian forward",
+      "won the 2022 champions league with real madrid",
+      "starred for real madrid",
+      "won olympic gold at tokyo 2020",
+      "known for finishing and quick combinations"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Raphinha",
+    "aliases": [],
+    "hints": [
+      "brazilian winger",
+      "starred for barcelona",
+      "played for leeds united and rennes",
+      "represented brazil at the 2022 world cup",
+      "known for left-footed cutting inside"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Lamine Yamal",
+    "aliases": [
+      "yamal"
+    ],
+    "hints": [
+      "spanish winger",
+      "became one of barcelona's youngest-ever first-team players",
+      "won euro 2024 with spain",
+      "won the 2024 european championship young player award",
+      "known for dribbling and creating from the right"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ousmane Dembélé",
+    "aliases": [
+      "dembele"
+    ],
+    "hints": [
+      "french forward",
+      "won the 2018 world cup",
+      "won the 2025 ballon d'or",
+      "starred for barcelona and psg",
+      "known for explosive pace and two-footed dribbling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Khvicha Kvaratskhelia",
+    "aliases": [
+      "kvara",
+      "kvaradona"
+    ],
+    "hints": [
+      "georgian winger",
+      "starred for napoli",
+      "won the 2022-23 serie a title with napoli",
+      "helped georgia reach the euro 2024 knockout stage",
+      "known as kvaradona by napoli fans"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Victor Osimhen",
+    "aliases": [
+      "osimhen"
+    ],
+    "hints": [
+      "nigerian striker",
+      "starred for napoli",
+      "won the 2022-23 serie a title",
+      "won the 2023 african player of the year award",
+      "known for pace and aerial threat"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Bukayo Saka",
+    "aliases": [
+      "saka"
+    ],
+    "hints": [
+      "english winger",
+      "starred for arsenal",
+      "won the 2020 fa cup with arsenal",
+      "won euro 2020 runner-up medal",
+      "known for left-footed dribbling and cut-ins"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Phil Foden",
+    "aliases": [
+      "foden",
+      "philip foden"
+    ],
+    "hints": [
+      "english midfielder",
+      "came through manchester city's academy",
+      "won the 2023 champions league with city",
+      "won the 2023 treble",
+      "known for close control and finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Cole Palmer",
+    "aliases": [
+      "palmer",
+      "cold palmer"
+    ],
+    "hints": [
+      "english attacking midfielder",
+      "starred for chelsea",
+      "won the 2023-24 pfa young player of the year award",
+      "known for a signature left-footed finish from the right",
+      "won the golden ball at the 2025 fifa club world cup"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Declan Rice",
+    "aliases": [
+      "rice"
+    ],
+    "hints": [
+      "english defensive midfielder",
+      "won euro 2020 runner-up medal",
+      "starred for west ham and arsenal",
+      "captained west ham to the 2023 conference league title",
+      "known for ball-winning and leadership"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Moisés Caicedo",
+    "aliases": [
+      "caicedo"
+    ],
+    "hints": [
+      "ecuadorian midfielder",
+      "starred for brighton before joining chelsea",
+      "represented ecuador at the 2022 world cup",
+      "known for ball-winning and passing range",
+      "played in the ecuador midfield at the 2022 world cup"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Enzo Fernández",
+    "aliases": [
+      "enzo"
+    ],
+    "hints": [
+      "argentine midfielder",
+      "won the 2022 world cup",
+      "won the 2022 world cup young player award",
+      "starred for benfica and chelsea",
+      "is known for long passing and set pieces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Alexis Mac Allister",
+    "aliases": [
+      "mac_allister"
+    ],
+    "hints": [
+      "argentine midfielder",
+      "won the 2022 world cup",
+      "starred for brighton and liverpool",
+      "scored against poland at the 2022 world cup",
+      "played a key role in argentina's 2022 world cup triumph"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Julián Álvarez",
+    "aliases": [
+      "la araña"
+    ],
+    "hints": [
+      "argentine forward",
+      "won the 2022 world cup",
+      "scored twice in the 2022 world cup semi-final",
+      "starred for manchester city and atlético madrid",
+      "won the 2021 copa américa"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Leroy Sané",
+    "aliases": [
+      "sane"
+    ],
+    "hints": [
+      "german winger",
+      "starred for manchester city and bayern munich",
+      "won the 2020-21 bundesliga with bayern",
+      "represented germany at euro 2020 and euro 2024",
+      "known for explosive pace and cutting inside"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Serge Gnabry",
+    "aliases": [
+      "gnabry"
+    ],
+    "hints": [
+      "german forward",
+      "starred for arsenal and bayern munich",
+      "won the 2020 champions league with bayern munich",
+      "won the 2017 confederations cup with germany",
+      "known for movement and direct dribbling"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kingsley Coman",
+    "aliases": [
+      "coman"
+    ],
+    "hints": [
+      "french winger",
+      "scored the winning goal in the 2020 champions league final",
+      "won the 2018 world cup",
+      "starred for bayern munich",
+      "known for pace and direct runs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Joshua Kimmich",
+    "aliases": [
+      "kimmich"
+    ],
+    "hints": [
+      "german midfielder",
+      "won the 2020 champions league with bayern munich",
+      "starred for bayern munich",
+      "played as both a midfielder and right-back for bayern",
+      "known for tactical versatility and passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Kai Havertz",
+    "aliases": [
+      "havertz"
+    ],
+    "hints": [
+      "german forward",
+      "scored the winning goal in the 2021 champions league final",
+      "won the 2021 champions league with chelsea",
+      "starred for bayer leverkusen, chelsea and arsenal",
+      "also played as a striker and attacking midfielder"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Christian Pulisic",
+    "aliases": [
+      "pulisic",
+      "captain america"
+    ],
+    "hints": [
+      "american winger",
+      "starred for chelsea, ac milan and dortmund",
+      "won the 2021 champions league with chelsea",
+      "captains the united states at times",
+      "known as captain america"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Weston McKennie",
+    "aliases": [
+      "mckennie"
+    ],
+    "hints": [
+      "american midfielder",
+      "starred for juventus",
+      "represented the united states at the 2022 world cup",
+      "won the 2020-21 italian super cup with juventus",
+      "known for late runs into the box"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Christian Eriksen",
+    "aliases": [
+      "eriksen"
+    ],
+    "hints": [
+      "danish playmaker",
+      "starred for tottenham, inter and manchester united",
+      "represented denmark at the 2018 and 2022 world cups",
+      "made a return to top-level football after cardiac arrest",
+      "scored for denmark at the 2022 world cup"
+    ],
+    "hard": false
+  },
+  {
+    "name": "João Cancelo",
+    "aliases": [
+      "cancelo"
+    ],
+    "hints": [
+      "portuguese full-back",
+      "won the 2023 champions league with manchester city",
+      "starred for barcelona, juventus and manchester city",
+      "represented portugal at euro 2020 and euro 2024",
+      "known for playing on both flanks"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Bruno Guimarães",
+    "aliases": [],
+    "hints": [
+      "brazilian midfielder",
+      "starred for newcastle united",
+      "won olympic gold at tokyo 2020 with brazil",
+      "represented brazil at the 2022 world cup",
+      "known for energetic ball-winning"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rafael Márquez",
+    "aliases": [
+      "rafa_marquez"
+    ],
+    "hints": [
+      "mexican centre-back",
+      "captained mexico",
+      "won the 2003 and 2011 concacaf gold cups with mexico",
+      "starred for barcelona and monaco",
+      "won the 2006 champions league with barcelona"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Javier Saviola",
+    "aliases": [
+      "saviola"
+    ],
+    "hints": [
+      "argentine forward",
+      "starred for barcelona and benfica",
+      "won the 2001 fifa world youth championship with argentina",
+      "won the golden ball and golden shoe at the 2001 u-20 world cup",
+      "known for his quick movement and finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Pablo Aimar",
+    "aliases": [
+      "aimar"
+    ],
+    "hints": [
+      "argentine attacking midfielder",
+      "starred for valencia and benfica",
+      "won the 1997 fifa world youth championship with argentina",
+      "was admired for creative passing and close control",
+      "was a childhood idol of lionel messi"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Diego Simeone",
+    "aliases": [
+      "simeone"
+    ],
+    "hints": [
+      "argentine midfielder and manager",
+      "played for argentina at the 1998 world cup",
+      "won la liga and the copa del rey with atlético madrid in 1995-96",
+      "later managed atlético madrid",
+      "played as a combative defensive midfielder"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Fernando Hierro",
+    "aliases": [
+      "hierro"
+    ],
+    "hints": [
+      "spanish defender",
+      "won the 2000 champions league with real madrid",
+      "starred for real madrid",
+      "captained spain at the 2002 world cup",
+      "known for leadership and aerial threat"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Santi Cazorla",
+    "aliases": [
+      "cazorla"
+    ],
+    "hints": [
+      "spanish midfielder",
+      "starred for arsenal and villarreal",
+      "won euro 2008 and euro 2012",
+      "known for technical control and free kicks",
+      "was comfortable using both feet"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mousa Dembélé",
+    "aliases": [],
+    "hints": [
+      "belgian midfielder",
+      "played for tottenham and fulham",
+      "represented belgium at the 2014 world cup",
+      "known for carrying the ball through midfield",
+      "distinct from the french winger with a similar surname"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Thomas Rosický",
+    "aliases": [
+      "rosicky",
+      "tomas rosicky"
+    ],
+    "hints": [
+      "czech attacking midfielder",
+      "starred for arsenal",
+      "captained the czech republic at euro 2012",
+      "played for borussia dortmund before joining arsenal",
+      "known for technique and long-range goals"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Henrikh Mkhitaryan",
+    "aliases": [
+      "mkhitaryan"
+    ],
+    "hints": [
+      "armenian attacking midfielder",
+      "starred for borussia dortmund, manchester united and roma",
+      "won the 2016-17 europa league with manchester united",
+      "captained armenia",
+      "known for late runs and creativity"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Demba Ba",
+    "aliases": [],
+    "hints": [
+      "senegalese striker",
+      "starred for chelsea and newcastle",
+      "scored a famous late winner against paris saint-germain in the 2014 champions league quarter-final",
+      "also played for west ham and shanghai shenhua",
+      "known for powerful finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Salomon Kalou",
+    "aliases": [
+      "kalou"
+    ],
+    "hints": [
+      "ivorian forward",
+      "won the 2012 champions league with chelsea",
+      "starred for chelsea, lille and hertha berlin",
+      "won the 2015 africa cup of nations",
+      "known for pace and direct attacking"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Victor Moses",
+    "aliases": [],
+    "hints": [
+      "nigerian winger",
+      "starred for chelsea and west ham",
+      "won the 2013 africa cup of nations with nigeria",
+      "played as a wing-back under antonio conte at chelsea",
+      "known for pace and work rate"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Wilfried Zaha",
+    "aliases": [
+      "zaha"
+    ],
+    "hints": [
+      "ivorian winger",
+      "starred for crystal palace",
+      "represented england at youth level before switching to ivory coast",
+      "known for dribbling and drawing fouls",
+      "became a key player for crystal palace in the premier league"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Wilfried Bony",
+    "aliases": [
+      "bony"
+    ],
+    "hints": [
+      "ivorian striker",
+      "starred for swansea city and manchester city",
+      "won the 2015 africa cup of nations with ivory coast",
+      "known for powerful long-range shooting",
+      "played for manchester city and swansea"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ahmed Musa",
+    "aliases": [
+      "musa"
+    ],
+    "hints": [
+      "nigerian forward",
+      "scored twice against argentina at the 2014 world cup",
+      "starred for leicester city and cska moscow",
+      "represented nigeria at multiple africa cup of nations tournaments",
+      "known for pace on the counterattack"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Hakan Çalhanoğlu",
+    "aliases": [
+      "calhanoglu"
+    ],
+    "hints": [
+      "turkish midfielder",
+      "starred for ac milan and inter",
+      "won the 2023-24 serie a with inter milan",
+      "captains turkey",
+      "known for long-range shots and set pieces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Arda Turan",
+    "aliases": [],
+    "hints": [
+      "turkish attacking midfielder",
+      "starred for atlético madrid and barcelona",
+      "won la liga with barcelona in 2015-16",
+      "captained turkey",
+      "known for close control and passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Nani",
+    "aliases": [
+      "luis carlos almeida da cunha"
+    ],
+    "hints": [
+      "portuguese winger",
+      "won euro 2016",
+      "starred for manchester united and sporting cp",
+      "won the 2008 champions league with manchester united",
+      "known by the nickname nani"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ricardo Quaresma",
+    "aliases": [
+      "quaresma"
+    ],
+    "hints": [
+      "portuguese winger",
+      "won euro 2016",
+      "known for the outside-of-the-boot trivela technique",
+      "starred for porto and barcelona",
+      "was a key portugal squad member at euro 2016"
+    ],
+    "hard": false
+  },
+  {
+    "name": "João Moutinho",
+    "aliases": [
+      "moutinho"
+    ],
+    "hints": [
+      "portuguese midfielder",
+      "won euro 2016",
+      "starred for monaco, wolverhampton and porto",
+      "played over 100 times for portugal",
+      "known for passing and positional versatility"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Bruno Alves",
+    "aliases": [],
+    "hints": [
+      "portuguese centre-back",
+      "won euro 2016",
+      "starred for porto and zenit",
+      "captained portugal at euro 2012",
+      "known for aerial strength"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Fábio Coentrão",
+    "aliases": [
+      "coentrao"
+    ],
+    "hints": [
+      "portuguese left-back",
+      "won euro 2016",
+      "starred for real madrid and benfica",
+      "played for portugal at euro 2012",
+      "known for speed and overlapping runs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Simão Sabrosa",
+    "aliases": [
+      "simao"
+    ],
+    "hints": [
+      "portuguese winger",
+      "represented portugal at euro 2004 and euro 2008",
+      "starred for barcelona, benfica and atlético madrid",
+      "known for dribbling and direct running"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Hulk",
+    "aliases": [
+      "givanildo vieira de sousa"
+    ],
+    "hints": [
+      "brazilian forward nicknamed hulk",
+      "starred for porto and zenit saint petersburg",
+      "won the 2011 europa league with porto",
+      "known for powerful left-footed shots",
+      "played for brazil at the 2014 world cup"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Radja Nainggolan",
+    "aliases": [
+      "nainggolan"
+    ],
+    "hints": [
+      "belgian midfielder of indonesian descent",
+      "starred for roma and inter",
+      "represented belgium at euro 2016",
+      "known for aggressive tackling and long-range shots",
+      "was nicknamed the ninja by italian football fans"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dries Mertens",
+    "aliases": [
+      "mertens"
+    ],
+    "hints": [
+      "belgian forward",
+      "starred for napoli and psv eindhoven",
+      "represented belgium at the 2014, 2018 and 2022 world cups",
+      "became napoli's all-time leading scorer",
+      "known for movement and finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Romelu Lukaku",
+    "aliases": [
+      "lukaku"
+    ],
+    "hints": [
+      "belgian striker",
+      "became belgium's all-time leading scorer",
+      "starred for inter, manchester united and chelsea",
+      "won the 2020-21 serie a with inter",
+      "known for strength and counter-attacking runs"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Edin Džeko",
+    "aliases": [
+      "dzeko"
+    ],
+    "hints": [
+      "bosnian striker",
+      "scored a crucial stoppage-time equaliser in manchester city's 2012 title-clinching match",
+      "starred for roma and inter",
+      "won the 2008-09 bundesliga with wolfsburg",
+      "known for aerial finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Miralem Pjanić",
+    "aliases": [
+      "pjanic"
+    ],
+    "hints": [
+      "bosnian midfielder",
+      "starred for juventus, roma and barcelona",
+      "won four consecutive serie a titles with juventus from 2016 to 2020",
+      "known for set pieces and long passing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dušan Tadić",
+    "aliases": [
+      "tadic"
+    ],
+    "hints": [
+      "serbian attacking midfielder",
+      "starred for ajax and southampton",
+      "played for serbia at the 2018 world cup",
+      "won the 2018-19 eredivisie with ajax",
+      "known for creativity and set pieces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Aleksandar Kolarov",
+    "aliases": [
+      "kolarov"
+    ],
+    "hints": [
+      "serbian left-back",
+      "starred for lazio and manchester city",
+      "scored a famous free kick against manchester united",
+      "represented serbia at the 2010 world cup",
+      "known for powerful set pieces"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Nemanja Matić",
+    "aliases": [
+      "matic"
+    ],
+    "hints": [
+      "serbian defensive midfielder",
+      "starred for chelsea and manchester united",
+      "won the 2016-17 premier league with chelsea",
+      "represented serbia at the 2018 world cup",
+      "known for tackling and aerial ability"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Sergej Milinković-Savić",
+    "aliases": [
+      "milinkovic_savic"
+    ],
+    "hints": [
+      "serbian midfielder",
+      "starred for lazio before moving to al-hilal",
+      "known for late runs and aerial presence",
+      "represented serbia at the 2018 and 2022 world cups",
+      "played as a box-to-box midfielder"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Dušan Vlahović",
+    "aliases": [
+      "vlahovic"
+    ],
+    "hints": [
+      "serbian striker",
+      "starred for fiorentina and juventus",
+      "became a prolific serie a scorer at a young age",
+      "represented serbia at the 2022 world cup",
+      "known for left-footed finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Ciro Immobile",
+    "aliases": [
+      "immobile"
+    ],
+    "hints": [
+      "italian striker",
+      "won the 2020 european championship with italy",
+      "starred for lazio",
+      "won the 2019-20 european golden shoe",
+      "known for runs in behind and finishing"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Marcus Rashford",
+    "aliases": [
+      "rashford",
+      "marcus rashford"
+    ],
+    "hints": [
+      "man united winger",
+      "english player",
+      "fast and skillful",
+      "came through Manchester United's academy"
+    ],
+    "hard": false
+  },
+  {
+    "name": "İlkay Gündoğan",
+    "aliases": [
+      "gundogan",
+      "ilkay gundogan"
+    ],
+    "hints": [
+      "german midfielder",
+      "played for man city and barcelona",
+      "won treble",
+      "very smart player"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Mason Mount",
+    "aliases": [
+      "mount",
+      "mason mount"
+    ],
+    "hints": [
+      "english midfielder",
+      "played for chelsea and man united",
+      "young player",
+      "box-to-box type"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Cody Gakpo",
+    "aliases": [
+      "gakpo",
+      "cody gakpo"
+    ],
+    "hints": [
+      "dutch forward",
+      "played for Liverpool and PSV Eindhoven",
+      "netherlands international",
+      "won premier league 2024–25",
+      "won eredivisie 2017–18 (psv)",
+      "scored three goals for the Netherlands at the 2022 FIFA World Cup",
+      "dutch footballer of the year 2021–22",
+      "shared uefa euro 2024 golden boot"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Alexander Isak",
+    "aliases": [
+      "isak",
+      "alexander isak"
+    ],
+    "hints": [
+      "swedish striker",
+      "played for Liverpool, Newcastle United and Real Sociedad",
+      "sweden international",
+      "joined Liverpool from Newcastle United in 2025",
+      "youngest goalscorer in swedish national team history",
+      "represented Sweden at UEFA Euro 2020",
+      "won copa del rey 2020 with real sociedad",
+      "won efl cup 2024–25 with newcastle"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Benjamin White",
+    "aliases": [
+      "ben white",
+      "benjamin white"
+    ],
+    "hints": [
+      "english defender",
+      "played for Brighton and Arsenal",
+      "operates at center-back or right-back",
+      "signed for arsenal 2021 for up to £50m (club record)",
+      "won championship with leeds (2019–20)",
+      "england international (Euro 2020 runner-up, WC 2022)",
+      "started career at brighton",
+      "part of england squad Euro 2020 (runner-up)"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rúben Neves",
+    "aliases": [
+      "neves",
+      "ruben neves"
+    ],
+    "hints": [
+      "portuguese defensive midfielder",
+      "joined Al-Hilal from Wolves in 2023",
+      "former wolves captain",
+      "won championship 2018 with wolves",
+      "transferred to al-hilal in 2023 for £47m",
+      "represented Portugal at UEFA Euro 2020 and Euro 2024",
+      "uefa nations league winner 2019 & 2025",
+      "over 60 caps for portugal"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Frenkie de Jong",
+    "aliases": [
+      "frenkie de jong"
+    ],
+    "hints": [
+      "dutch midfielder",
+      "joined Barcelona from Ajax in 2019",
+      "netherlands national team",
+      "won eredivisie and knvb cup with ajax (2019)",
+      "transferred to barcelona for €75m in 2019",
+      "uefa nations league runner-up 2019",
+      "represented the Netherlands at the 2022 FIFA World Cup",
+      "fifa fifpro world11 in 2019"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Youri Tielemans",
+    "aliases": [
+      "tielemans",
+      "youri tielemans"
+    ],
+    "hints": [
+      "belgian midfielder",
+      "played for Leicester City and Aston Villa",
+      "captains the belgium national team",
+      "won 2 league titles with anderlecht",
+      "scored winning goal in 2021 fa cup final (leicester)",
+      "scored the winning goal in the 2021 FA Cup final for Leicester City",
+      "made his senior Belgium debut in 2016",
+      "represented Belgium at the 2018 and 2022 FIFA World Cups"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Rafael Leão",
+    "aliases": [
+      "rafael leao",
+      "rafael leão"
+    ],
+    "hints": [
+      "portuguese left winger",
+      "played for Lille and AC Milan",
+      "portugal national team",
+      "won serie a 2021–22 with milan",
+      "serie a mvp 2021–22",
+      "u17 european champion 2016 (portugal)",
+      "won nations league 2024–25 (portugal)",
+      "joined AC Milan from Lille in 2019"
+    ],
+    "hard": false
+  },
+  {
+    "name": "Theo Hernández",
+    "aliases": [
+      "theo hernandez"
+    ],
+    "hints": [
+      "french left-back",
+      "joined Al-Hilal from AC Milan in 2025",
+      "france national team",
+      "won champions league 2017–18 with real madrid",
+      "won serie a 2021–22 with ac milan",
+      "represented France at the 2022 FIFA World Cup final",
+      "won 2020–21 nations league with france",
+      "brother of lucas hernandez"
+    ],
+    "hard": false
+  }
+]

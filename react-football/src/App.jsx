@@ -5,32 +5,40 @@ import FootballExpandedGames from "./FootballExpandedGames";
 
 import "./App.css";
 
-const ROUND_SECONDS = 60;
-const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:5000";
+const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
 function App() {
   const [choice, setChoice] = useState("");
   const [hintNo, setHintNo] = useState(0);
   const [hints, setHints] = useState([]);
+  const [hasMoreHints, setHasMoreHints] = useState(true);
+  const [maxHints, setMaxHints] = useState(4);
+  const [easyHintLimits, setEasyHintLimits] = useState([]);
   const [guess, setGuess] = useState("");
   const [result, setResult] = useState("");
   const [score, setScore] = useState(0);
   const [roundComplete, setRoundComplete] = useState(false);
   const [loading, setLoading] = useState(false);
   const [roundStarted, setRoundStarted] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
+  const [timeLeft, setTimeLeft] = useState(60);
   const [streak, setStreak] = useState(0);
   const [playerCount, setPlayerCount] = useState(0);
   const [gameMode, setGameMode] = useState("manual");
-  const [difficulty, setDifficulty] = useState("medium");
+  const [difficulty, setDifficulty] = useState("easy");
   const [challengeDate, setChallengeDate] = useState("");
   const [activeGame, setActiveGame] = useState("classic");
+  const displayTime = !roundStarted && !roundComplete && !result
+    ? difficulty === "hard" ? 45 : 60
+    : timeLeft;
 
   useEffect(() => {
     fetch(`${API_URL}/game_info`)
       .then((response) => response.json())
-      .then((data) => setPlayerCount(Number(data.player_count) || 0))
-      .catch(() => setResult("Could not connect to the game server."));
+    .then((data) => {
+      setPlayerCount(Number(data.player_count) || 0);
+      setEasyHintLimits(Array.isArray(data.easy_hint_limits) ? data.easy_hint_limits : []);
+    })
+    .catch(() => setResult("Could not connect to the game server."));
   }, []);
 
   useEffect(() => {
@@ -62,16 +70,18 @@ function App() {
   const resetHints = () => {
     setHints([]);
     setHintNo(0);
+    setHasMoreHints(true);
   };
 
-  const beginRound = (selectedNumber, date = "") => {
+  const beginRound = (selectedNumber, date = "", roundMaxHints) => {
     setChoice(String(selectedNumber));
     resetHints();
+    setMaxHints(roundMaxHints ?? (difficulty === "hard" ? 1 : easyHintLimits[selectedNumber - 1] || 4));
     setGuess("");
     setResult("");
     setRoundComplete(false);
     setRoundStarted(true);
-    setTimeLeft(ROUND_SECONDS);
+    setTimeLeft(difficulty === "hard" ? 45 : 60);
     setChallengeDate(date);
   };
 
@@ -101,7 +111,7 @@ function App() {
         return;
       }
 
-      beginRound(data.index + 1, data.challenge_date || "");
+      beginRound(data.index + 1, data.challenge_date || "", data.max_hints);
     } catch {
       setResult("Could not connect to the game server.");
     } finally {
@@ -145,6 +155,7 @@ function App() {
 
       setHints((prev) => [...prev, data.hint]);
       setHintNo((prev) => prev + 1);
+      setHasMoreHints(data.has_more);
       if (!data.has_more) {
         setResult("That was the last hint. Submit your answer.");
       }
@@ -181,7 +192,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
       },
-        body: JSON.stringify({ index: selectedNumber - 1, guess }),
+        body: JSON.stringify({ index: selectedNumber - 1, guess, difficulty }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -220,110 +231,129 @@ function App() {
 
   return (
     <div className="page-shell">
+      <div className="stadium-background" aria-hidden="true">
+        <div className="stadium-pitch">
+          <span className="stadium-goal stadium-goal-left" />
+          <span className="stadium-goal stadium-goal-right" />
+          <span className="stadium-player team-home player-one" />
+          <span className="stadium-player team-away player-two" />
+          <span className="stadium-player team-home player-three" />
+          <span className="stadium-player team-away player-four" />
+          <span className="stadium-player team-home player-five" />
+          <span className="stadium-player team-away player-six" />
+          <span className="stadium-player team-home player-seven" />
+          <span className="stadium-player team-away player-eight" />
+          <span className="stadium-player team-home player-nine" />
+          <span className="stadium-player team-away player-ten" />
+          <span className="stadium-ball" />
+        </div>
+      </div>
       <header className="site-header">
         <a className="brand-lockup" href="#top" aria-label="Touchline home">
           <span className="brand-mark">T</span>
           <span><strong>TOUCHLINE</strong><small>FOOTBALL GAMES</small></span>
         </a>
-        <div className="header-meta"><span className="live-dot" /> {playerCount || "..."} players · 12 games</div>
+        <div className="header-meta"><span className="live-dot" /> {playerCount || "..."} players</div>
       </header>
 
       <main className="game-hub" id="top">
         <section className="hub-intro">
-          <p className="eyebrow">PICK YOUR MATCHDAY</p>
-          <h1>Football knowledge.<br /><em>Game on.</em></h1>
-          <p className="intro-copy">Put your player knowledge to work. Play solo or challenge a friend on the same screen.</p>
+          <p className="eyebrow">MATCHDAY</p>
+          <h1>Pick your game. <em>Own the pitch.</em></h1>
         </section>
 
-        <nav className="game-picker" aria-label="Choose a game">
-          <button className={`game-pick ${activeGame === "classic" ? "is-active" : ""}`} onClick={() => setActiveGame("classic")} aria-pressed={activeGame === "classic"}>
-            <span className="pick-number">01</span>
-            <span className="pick-copy"><strong>Guess the footballer</strong><small>Clues, guesses, and a ticking clock.</small></span>
-            <span className="pick-arrow" aria-hidden="true">→</span>
-          </button>
-          <button className={`game-pick ${activeGame === "tictactoe" ? "is-active" : ""}`} onClick={() => setActiveGame("tictactoe")} aria-pressed={activeGame === "tictactoe"}>
-            <span className="pick-number">02</span>
-            <span className="pick-copy"><strong>Football tic-tac-toe</strong><small>Guess right to claim a square. Two-player.</small></span>
-            <span className="pick-arrow" aria-hidden="true">→</span>
-          </button>
-          <button className={`game-pick ${activeGame === "multiple" ? "is-active" : ""}`} onClick={() => setActiveGame("multiple")} aria-pressed={activeGame === "multiple"}>
-            <span className="pick-number">03</span>
-            <span className="pick-copy"><strong>Four-choice face-off</strong><small>Use the clues, then pick the right player.</small></span>
-            <span className="pick-arrow" aria-hidden="true">→</span>
-          </button>
-          <button className={`game-pick ${activeGame === "quickfire" ? "is-active" : ""}`} onClick={() => setActiveGame("quickfire")} aria-pressed={activeGame === "quickfire"}>
-            <span className="pick-number">04</span>
-            <span className="pick-copy"><strong>60-second quickfire</strong><small>Stack points and keep your streak alive.</small></span>
-            <span className="pick-arrow" aria-hidden="true">→</span>
-          </button>
-          <button className={`game-pick ${activeGame === "lab" ? "is-active" : ""}`} onClick={() => setActiveGame("lab")} aria-pressed={activeGame === "lab"}>
-            <span className="pick-number">05</span>
-            <span className="pick-copy"><strong>Football Lab</strong><small>Eight more ways to test your football brain.</small></span>
-            <span className="pick-arrow" aria-hidden="true">→</span>
-          </button>
-        </nav>
+        <div className="game-hub-layout">
+          <nav className="game-picker" aria-label="Choose a game">
+            <button className={`game-pick ${activeGame === "classic" ? "is-active" : ""}`} onClick={() => setActiveGame("classic")} aria-pressed={activeGame === "classic"}>
+              <span className="pick-number">01</span>
+              <span className="pick-copy"><strong>Guess the player</strong></span>
+            </button>
+            <button className={`game-pick ${activeGame === "tictactoe" ? "is-active" : ""}`} onClick={() => setActiveGame("tictactoe")} aria-pressed={activeGame === "tictactoe"}>
+              <span className="pick-number">02</span>
+              <span className="pick-copy"><strong>Tic-tac-toe</strong></span>
+            </button>
+            <button className={`game-pick ${activeGame === "multiple" ? "is-active" : ""}`} onClick={() => setActiveGame("multiple")} aria-pressed={activeGame === "multiple"}>
+              <span className="pick-number">03</span>
+              <span className="pick-copy"><strong>Face-off</strong></span>
+            </button>
+            <button className={`game-pick ${activeGame === "quickfire" ? "is-active" : ""}`} onClick={() => setActiveGame("quickfire")} aria-pressed={activeGame === "quickfire"}>
+              <span className="pick-number">04</span>
+              <span className="pick-copy"><strong>Quickfire</strong></span>
+            </button>
+            <button className={`game-pick ${activeGame === "lab" ? "is-active" : ""}`} onClick={() => setActiveGame("lab")} aria-pressed={activeGame === "lab"}>
+              <span className="pick-number">05</span>
+              <span className="pick-copy"><strong>Football Lab</strong></span>
+            </button>
+          </nav>
 
-        {activeGame === "classic" ? (
+          <div className="active-game-content" key={activeGame}>
+            {activeGame === "classic" ? (
           <section className="game-panel classic-panel" aria-label="Guess the footballer game">
-            <div className="panel-heading">
-              <div><p className="eyebrow">SOLO CHALLENGE</p><h2>Guess the footballer</h2></div>
-              <div className="score-chip"><span>YOUR SCORE</span><strong>{score}</strong></div>
+            <div className="match-card-heading">
+              <div><h2>Guess the footballer</h2></div>
+              <div className={`match-clock ${roundStarted && displayTime <= 10 ? "is-urgent" : ""}`} aria-live="polite">
+                <span>TIME LEFT</span><strong>{displayTime}<i>SEC</i></strong>
+              </div>
             </div>
-            <div className="mode-controls">
-              <label>Game mode
-                <select value={gameMode} onChange={(event) => setGameMode(event.target.value)} disabled={roundStarted}>
-                  <option value="manual">Choose player</option>
-                  <option value="random">Random player</option>
-                  <option value="daily">Daily challenge</option>
-                </select>
-              </label>
-              <label>Difficulty
-                <select value={difficulty} onChange={(event) => setDifficulty(event.target.value)} disabled={roundStarted}>
-                  <option value="easy">Easy · up to 4 hints</option>
-                  <option value="medium">Medium · up to 3 hints</option>
-                  <option value="hard">Hard · up to 2 hints</option>
-                </select>
-              </label>
+            <div className="round-scoreboard" aria-label="Round scoreboard">
+              <div><span>YOUR SCORE</span><strong>{score}</strong></div>
+              <div><span>STREAK</span><strong>{streak}<small>×</small></strong></div>
             </div>
-            {gameMode === "manual" && <p className="selection-prompt">Choose a player number from 1 to {playerCount || "..."}</p>}
-            {gameMode === "daily" && challengeDate && <p className="daily-date">Daily challenge · {challengeDate} UTC</p>}
-            <div className="game-stats" aria-live="polite">
-              <span><small>TIME</small><strong>{timeLeft}<i>s</i></strong></span>
-              <span><small>STREAK</small><strong>{streak}</strong></span>
+            <div className="match-setup">
+              <select aria-label="Game mode" value={gameMode} onChange={(event) => setGameMode(event.target.value)} disabled={roundStarted}>
+                <option value="manual">Choose number</option>
+                <option value="random">Random player</option>
+                <option value="daily">Daily challenge</option>
+              </select>
+              <div className={`difficulty-selector ${difficulty === "hard" ? "is-hard" : ""}`} role="radiogroup" aria-label="Choose difficulty">
+                <button type="button" role="radio" aria-checked={difficulty === "easy"} className={difficulty === "easy" ? "is-selected" : ""} onClick={() => setDifficulty("easy")} disabled={roundStarted}>
+                  <span>EASY</span><small>60 sec · all clues</small>
+                </button>
+                <button type="button" role="radio" aria-checked={difficulty === "hard"} className={difficulty === "hard" ? "is-selected" : ""} onClick={() => setDifficulty("hard")} disabled={roundStarted}>
+                  <span>HARD <i>★</i></span><small>45 sec · 1 clue</small>
+                </button>
+              </div>
             </div>
+            <p className={`difficulty-note ${difficulty === "hard" ? "is-hard" : ""}`}>{difficulty === "hard" ? "Correct +5 · Miss −2" : "Correct +3 · Miss −1"}</p>
+            {gameMode === "daily" && challengeDate && <p className="daily-date">Daily · {challengeDate}</p>}
             <div className="controls-row">
               {gameMode === "manual" ? (
-                <input className="footballer-index" type="number" min="1" max={playerCount || undefined} placeholder="Player number" value={choice} onChange={(e) => handleChoiceChange(e.target.value)} disabled={roundStarted} />
-              ) : (
-                <p className="selected-mode">{gameMode === "daily" ? "Today’s shared player" : "A random player will be selected"}</p>
-              )}
+                <input className="footballer-index" type="number" min="1" max={playerCount || undefined} placeholder="Player #" aria-label={`Player number, 1 to ${playerCount || "loading"}`} value={choice} onChange={(e) => handleChoiceChange(e.target.value)} disabled={roundStarted} />
+              ) : null}
               <button className="primary-btn" onClick={startGame} disabled={loading || roundStarted}>{loading ? "Starting..." : "Start round"}</button>
             </div>
-            <div className="action-row">
-              <button className="secondary-btn" onClick={getHint} disabled={loading || !roundStarted || roundComplete}>{loading ? "Loading..." : "Get hint"}</button>
-              <button className="skip-btn" onClick={skipRound} disabled={loading || !roundStarted}>Skip round</button>
-            </div>
-            <div className="hints-wrap">
-              {hints.map((hint, index) => <p className="hint-line" key={`${index}-${hint}`}><span>{String(index + 1).padStart(2, "0")}</span>{hint}</p>)}
-              {!hints.length && <p className="empty-hints">Start a round, then reveal clues one at a time.</p>}
+            <div className="clue-heading"><span>CLUES</span><strong>{hints.length}<i> / {maxHints}</i></strong></div>
+            <div className="clue-action-row">
+              <div className="hints-wrap">
+                {hints.map((hint, index) => <p className="hint-line" key={`${index}-${hint}`}><span>{String(index + 1).padStart(2, "0")}</span>{hint}</p>)}
+                {!hints.length && <p className="empty-hints">{roundStarted ? "Guess now or reveal a clue." : "Your clue will appear here."}</p>}
+              </div>
+              <button className="secondary-btn give-clue-btn" onClick={getHint} disabled={loading || !roundStarted || roundComplete || !hasMoreHints}>
+                {loading ? "Loading..." : "Give clue"}
+              </button>
             </div>
             <div className="answer-row">
-              <input className="your-answer" type="text" placeholder="Type a player's name" value={guess} onChange={(e) => setGuess(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") checkAnswer(); }} />
-              <button className="submit-answer-btn" onClick={checkAnswer} disabled={loading || roundComplete || !roundStarted}>Submit guess</button>
+              <input className="your-answer" type="text" placeholder="Player name" aria-label="Player name" value={guess} onChange={(e) => setGuess(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") checkAnswer(); }} disabled={!roundStarted || loading || roundComplete} />
+              <button className="submit-answer-btn" onClick={checkAnswer} disabled={loading || roundComplete || !roundStarted}>Guess</button>
+            </div>
+            <div className="action-row">
+              <button className="skip-btn" onClick={skipRound} disabled={loading || !roundStarted}>Skip</button>
             </div>
             {result && <p className="result-message" role="status">{result}</p>}
           </section>
-        ) : activeGame === "tictactoe" ? (
-          <FootballTicTacToe apiUrl={API_URL} playerCount={playerCount} />
-        ) : activeGame === "multiple" ? (
-          <FootballMultipleChoice apiUrl={API_URL} />
-        ) : activeGame === "quickfire" ? (
-          <FootballQuickfire apiUrl={API_URL} />
-        ) : (
-          <FootballExpandedGames />
-        )}
+            ) : activeGame === "tictactoe" ? (
+          <FootballTicTacToe apiUrl={API_URL} playerCount={playerCount} difficulty={difficulty} onDifficultyChange={setDifficulty} />
+            ) : activeGame === "multiple" ? (
+          <FootballMultipleChoice apiUrl={API_URL} difficulty={difficulty} onDifficultyChange={setDifficulty} />
+            ) : activeGame === "quickfire" ? (
+          <FootballQuickfire apiUrl={API_URL} difficulty={difficulty} onDifficultyChange={setDifficulty} />
+            ) : (
+          <FootballExpandedGames difficulty={difficulty} onDifficultyChange={setDifficulty} />
+            )}
+          </div>
+        </div>
       </main>
-      <footer className="site-footer"><span>TOUCHLINE / EST. FOR FOOTBALL FANS</span><span>Know the game. Claim the grid.</span></footer>
+      <footer className="site-footer"><span>TOUCHLINE</span></footer>
     </div>
   );
 }

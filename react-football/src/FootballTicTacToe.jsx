@@ -16,13 +16,13 @@ function getWinner(board) {
   return null;
 }
 
-function FootballTicTacToe({ apiUrl, playerCount }) {
+function FootballTicTacToe({ apiUrl, playerCount, difficulty, onDifficultyChange }) {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [currentMark, setCurrentMark] = useState("X");
   const [selectedSquare, setSelectedSquare] = useState(null);
   const [challengeIndex, setChallengeIndex] = useState(null);
-  const [difficulty, setDifficulty] = useState("medium");
   const [hints, setHints] = useState([]);
+  const [hasMoreHints, setHasMoreHints] = useState(true);
   const [hintNo, setHintNo] = useState(0);
   const [guess, setGuess] = useState("");
   const [status, setStatus] = useState("Choose an open square, then earn it with a correct guess.");
@@ -50,6 +50,7 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
 
       setChallengeIndex(data.index);
       setHints([]);
+      setHasMoreHints(true);
       setHintNo(0);
       setGuess("");
       setStatus(`Player ${currentMark} is up. Guess the footballer to claim square ${selectedSquare + 1}.`);
@@ -80,6 +81,7 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
 
       setHints((previous) => [...previous, data.hint]);
       setHintNo((previous) => previous + 1);
+      setHasMoreHints(data.has_more);
       setStatus(data.has_more ? "Clue revealed. Make your guess." : "Final clue revealed. Make your guess.");
     } catch {
       setStatus("Could not connect to the game server.");
@@ -101,7 +103,7 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
       const response = await fetch(`${apiUrl}/check_answer`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ index: challengeIndex, guess }),
+        body: JSON.stringify({ index: challengeIndex, guess, difficulty }),
       });
       const data = await response.json();
       if (!response.ok) {
@@ -112,6 +114,7 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
       setGuess("");
       setChallengeIndex(null);
       setHints([]);
+      setHasMoreHints(true);
       setHintNo(0);
 
       if (data.points > 0 && selectedSquare !== null) {
@@ -152,6 +155,7 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
     setSelectedSquare(null);
     setChallengeIndex(null);
     setHints([]);
+    setHasMoreHints(true);
     setHintNo(0);
     setGuess("");
     setWinner(null);
@@ -197,10 +201,9 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
         <div className="challenge-panel">
           <div className="turn-indicator"><span className={`turn-mark mark-${currentMark.toLowerCase()}`}>{currentMark}</span><span>{winner ? "FULL TIME" : `PLAYER ${currentMark} TO PLAY`}</span></div>
           <label className="ttt-difficulty">Difficulty
-            <select value={difficulty} onChange={(event) => setDifficulty(event.target.value)} disabled={challengeIndex !== null || Boolean(winner)}>
-              <option value="easy">Easy · 4 clues</option>
-              <option value="medium">Medium · 3 clues</option>
-              <option value="hard">Hard · 2 clues</option>
+            <select value={difficulty} onChange={(event) => onDifficultyChange(event.target.value)} disabled={challengeIndex !== null || Boolean(winner)}>
+              <option value="easy">Easy · all available clues</option>
+              <option value="hard">Hard · lesser-known legends, 1 clue</option>
             </select>
           </label>
           <p className="ttt-status" role="status">{status}</p>
@@ -219,7 +222,7 @@ function FootballTicTacToe({ apiUrl, playerCount }) {
                 <input value={guess} onChange={(event) => setGuess(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter") submitGuess(); }} placeholder="Who is it?" aria-label="Footballer guess" />
                 <button className="primary-btn" onClick={submitGuess} disabled={busy || !guess.trim()}>Guess</button>
               </div>
-              <button className="secondary-btn" onClick={revealHint} disabled={busy}>Reveal a clue</button>
+              <button className="secondary-btn" onClick={revealHint} disabled={busy || !hasMoreHints}>Reveal a clue</button>
             </>
           )}
           {winner && <button className="primary-btn rematch-btn" onClick={newMatch}>Play rematch</button>}
